@@ -16,3 +16,13 @@
 
 他Wikiの未解決問いをinformation-seeking参照で調査し、対象Wikiで回答/ingestを完了した後、一連の探索方法をこのWikiへ一事例として記録する方針を明文化。作業中のrouteメモと、完了後のケースfile-backを分け、ドメイン知識の二重管理を避ける。
 (touched 3 wiki pages + AGENTS.md/log)
+
+## [2026-09-30] ingest | 14 sourcesを直列で再参照・ingest
+
+sources/の全14ページに対し、`source_url`を再取得して要約を刷新。各sourceから概念を抽出し、47のconceptページを新設（図書館ガイド系7、AI検索系5、Deep Research系4、検索/抽出API系12、Agent harness系7、学術メタデータ系7、図書館系4）。analyses/の「初回の資料調査」tableを再参照後の概念で再構成し、再ingestで各社の設計パターン（生結果/回答分離・段階化・provider切替・schema-dehydrated・library protocol・二次利用条件）が反復している事実をまとめた。
+(touched 14 sources + 47 concepts + analyses + index/log)
+
+## [2026-09-30] ingest | Deep Research マルチベンダー化
+
+Deep Research agent conceptページの出典がGemini一社に偏っていたため、他社の公式資料をweb検索で探索。OpenAI（API + ChatGPT help）、Anthropic（multi-agent engineering blog + Claude help）、Perplexity（Sonar→Agent API migration + Advanced Deep Research help）、xAI（Grok multi-agent docs）、Scopus AI（Deep Research announcement + tips）を直列でingestし、sources 8件・concept 6件を新設（LeadResearcher/Subagent役割分担、引用位置特定のCitationAgent、LLM-as-judge評価rubric、Interleaved thinking、subagent→filesystem直接output、claimごとのconfidence score）。Deep Research agentページをマルチベンダー実装の比較表に刷新し、設計のバリエーション軸（multi-agent粒度・source開閉・citation粒度・prompting中間段・cost model・途中steer）を整理。
+(touched 8 sources + 6 concepts + Deep Research agent concept + index/log)
