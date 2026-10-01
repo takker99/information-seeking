@@ -52,4 +52,5 @@ tags: [deep-research, agent]
 
 - [[マルチソースグラウンディング]]、[[非同期研究タスク]]、[[マルチソースグラウンディング]]、[[LeadResearcher_Subagent 役割分担（orchestrator-worker）]]、[[引用位置特定のCitationAgent]]、[[claimごとのconfidence score（research report）]]
 - [[2026-09-30 Gemini Deep Research Agent]]、[[2026-09-30 OpenAI Deep Research API]]、[[2026-09-30 Anthropic Multi-Agent Research System]]、[[2026-09-30 xAI Grok Multi-Agent Research]]、[[2026-09-30 Perplexity Sonar Deep Research to Agent API Migration]]、[[2026-09-30 Scopus AI Deep Research]]
+- [[SMS-2026S-report Scopus AI Deep Research論文探索]] — 学術限定DRを13ラウンド実行した実地ケース。「地図」として使いfulltextで根拠を確認する二段構成
 - [[問いに応じた情報探索経路の設計]]

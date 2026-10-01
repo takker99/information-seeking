@@ -15,4 +15,5 @@ tags: [ai-search, library]
 ## 関連
 
 - [[生成AIで問いと検索語を作る]] — database外の汎用生成AIとの役割分担
+- [[SMS-2026S-report Scopus AI Deep Research論文探索]] — DB統合AI（Deep Research型）を探索パイプラインの中間部品として使い、検証・ingest・判断をwiki側で担ったケース
 - [[問いに応じた情報探索経路の設計]]

@@ -14,7 +14,9 @@ Query時は最初に読む。
 - [検索語の展開](concepts/検索語の展開.md) — key concepts・同義語・シソーラス・訳語の拡張
 - [検索テクニック](concepts/検索テクニック.md) — Boolean演算子・phrase search・truncation・advanced search・field制限
 - [検索結果の広げ方と絞り方](concepts/検索結果の広げ方と絞り方.md) — 結果量に応じた調整とdatabase切替
-- [検索過程の記録](concepts/検索過程の記録.md) — search journalの項目と運用
+- [検索過程の記録](concepts/検索過程の記録.md) — search journalの項目と運用。本人の記憶の校正装置でもある
+- [探索履歴の偏り](concepts/探索履歴の偏り.md) — 蓄積した記録の非対称が後の比較判断にバイアスを与える
+- [問いの反転](concepts/問いの反転.md) — mismatch発覚時に問いを逆向きに組み替え、素材を使い回すpivot
 - [content typeで探索先を選ぶ](concepts/content typeで探索先を選ぶ.md) — 必要な資料種からdatabase・guideを選ぶ
 - [引用追跡](concepts/引用追跡.md) — 後方/前方のcitation graph辿り
 - [情報源の評価](concepts/情報源の評価.md) — 学術性・peer review・Publication Forum
@@ -39,7 +41,8 @@ Query時は最初に読む。
 - [LLM-as-judge評価rubric](concepts/LLM-as-judge評価rubric.md) — agentic systemの評価rubric
 - [Interleaved thinking](concepts/Interleaved thinking.md) — extended thinkingのtool呼び出し合間での利用
 - [subagentからfilesystemへ直接output](concepts/subagentからfilesystemへ直接output.md) — game of telephone回避
-- [claimごとのconfidence score（research report）](concepts/claimごとのconfidence score（research report）.md) — 出力の透明性軸
+- [claimごとのconfidence score（research report）](concepts/claimごとのconfidence score（research report）.md) — 出力の透明性軸。判定対象はclaimで書誌metadataは別判定
+- [不在表示から研究ギャップを検出する](concepts/不在表示から研究ギャップを検出する.md) — curated corpus上のsemantic不在断定をnegative survey近似として使う
 
 ### 検索・抽出API
 
@@ -111,7 +114,9 @@ Query時は最初に読む。
 - [2026-09-30 Helsinki Information Seeking Guide](sources/2026-09-30 Helsinki Information Seeking Guide.md) — 検索語展開・シソーラス・AI Search of Helka・Scopus AI等DB統合AI案内
 - [2026-09-30 Illinois Library Search Strategies](sources/2026-09-30 Illinois Library Search Strategies.md) — 探索前の戦略立案とsearch journalによる記録
 - [2026-09-30 Illinois Citation Chasing](sources/2026-09-30 Illinois Citation Chasing.md) — 後方/前方citation chasingとcitation indexing database
+- [2026-10-01 SMS-2026S-report Scopus AI探索記録](sources/2026-10-01 SMS-2026S-report Scopus AI探索記録.md) — 別Wikiで実行したScopus AI Deep Research複数ラウンド（13レポート）のraw記録一覧
 
 ## analyses
 
 - [問いに応じた情報探索経路の設計](analyses/問いに応じた情報探索経路の設計.md) — 探索経路の初期研究課題と、14 sources再ingest後の設計パターン整理、他Wikiの問いを探索ケースにする運用
+- [SMS-2026S-report Scopus AI Deep Research論文探索](analyses/SMS-2026S-report Scopus AI Deep Research論文探索.md) — 学術限定DR複数ラウンド×キュレーション×DOI検証×fulltext ingestの実地ケース。AIレポートを地図、論文を根拠とする二段構成が効いた
