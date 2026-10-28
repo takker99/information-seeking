@@ -54,3 +54,11 @@ Deep Research agent conceptページの出典がGemini一社に偏っていた�
 - 意味修正: 「生結果と回答生成の分離」と「検索と抽出のbackend分離」は分離する対象が異なる別軸であることを明記
 - index.mdのtypo（mailo→mailto）を修正、overview.mdに最初の実地ケースと現在の規模を追記
 - lint: DUPLICATE 156→0、ORPHAN 0、index欠損/stale 0、raw切れ 0、sourcesポインタ欠落 0
+
+## [2026-10-29] refactor | M1/M3の概念統合
+
+- M1: `concepts/include_domains_mode restrict_prefer.md` を `concepts/ドメインフィルタ.md` に統合。「適用モード: restrict / prefer」節としてTavily `include_domains_mode`（restrict/prefer、`include_domains`未指定時の400）、Perplexity allowlistとの差、使い分けを収めた。旧ページは削除
+- M3: `concepts/auto_parametersの暗黙昇格.md` を `concepts/検索depthとcreditのトレードオフ.md` に統合。「auto_parametersによる暗黙昇格」節として`search_depth: advanced`への暗黙昇格・2 credits・明示指定の推奨・Exa/Perplexityとの比較を収めた。旧ページは削除
+- リンク更新: `sources/2026-09-30 OpenAI ChatGPT Deep Research Help` は `[[ドメインフィルタ|include_domains_mode restrict/prefer]]`、`sources/2026-09-30 Tavily Search API` の関連節と `analyses/問いに応じた情報探索経路の設計` の表は統合先の既存リンクに寄せた。旧タイトルへのwikilinkは0
+- `index.md` は旧2行を削除し、統合先2行の要約にrestrict/prefer・auto_parametersを含めた
+- lint: DUPLICATE 0、ORPHAN 0、index欠損/stale 0、raw切れ 0、sourcesポインタ欠落 0、OPEN_LINKは `[[Keenious]]` のみ

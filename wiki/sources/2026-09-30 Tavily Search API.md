@@ -63,6 +63,6 @@ OpenAPI specに`Extract`/`Crawl`/`Map`/`Research`/`Feedback`/`Usage`/`Logs`のta
 
 ## 関連
 
-- [[検索depthとcreditのトレードオフ]]、[[include_domains_mode restrict_prefer]]、[[auto_parametersの暗黙昇格]]
+- [[検索depthとcreditのトレードオフ]]
 - [[2026-09-30 Exa Search API]]
 - [[問いに応じた情報探索経路の設計]]
