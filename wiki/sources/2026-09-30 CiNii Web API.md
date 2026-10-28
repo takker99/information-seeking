@@ -30,8 +30,8 @@ CiNii Research側で: 論文検索、図書館検索、所蔵検索。CiNii Book
 
 ### 利用登録
 
-- API利用には[登録](/ja/cinii/api/developer)が必要。
-- 商用利用では事前連絡が求められる場合がある（[利用規約](/cinii/terms)参照）。
+- API利用には[登録](https://support.nii.ac.jp/ja/cinii/api/developer)が必要。
+- 商用利用では事前連絡が求められる場合がある（[利用規約](https://support.nii.ac.jp/cinii/terms)参照）。
 
 ### 関連NIIコンテンツサービス
 

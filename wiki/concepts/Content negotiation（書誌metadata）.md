@@ -12,7 +12,7 @@ tags: [api, design]
 経路設計上の含意:
 
 - 既存pipelineがJSON前提ならそのまま、XMLが必要なら切替え
-- bulk download（[Public data files and snapshots](https://www.crossref.org/documentation/retrieve-metadata/bulk-downloads/)）や[OAI-PMH](/documentation/retrieve-metadata/oai-pmh/)と並ぶ取得形式の選択肢
+- bulk download（[Public data files and snapshots](https://www.crossref.org/documentation/retrieve-metadata/bulk-downloads/)）や[OAI-PMH](https://www.crossref.org/documentation/retrieve-metadata/oai-pmh/)と並ぶ取得形式の選択肢
 - 同一recordを複数形式でcacheしてもschemaが同じならhash keyが一致する。schema driftを[[検索過程の記録]]に書く
 
 [[Dehydrated nested entity]]（OpenAlex）と並ぶ、API設計の「response shape切替」パターン。Crossrefは内容交渉、OpenAlexはnested stub化で、用途に応じて最適化する。

@@ -37,7 +37,7 @@ OpenCodeの公式websearch機能説明。OpenCode本体とは別のproviderを�
 ### Permissions
 
 - `websearch` permission action、検索語がresource。明示許可のないsearchは確認。
-- ruleの順序とmatchingは[Permissions](/permissions)参照。
+- ruleの順序とmatchingは[Permissions](https://opencode.ai/v2/docs/permissions)参照。
 
 ### Disable
 

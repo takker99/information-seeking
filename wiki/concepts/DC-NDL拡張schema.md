@@ -7,7 +7,7 @@ tags: [library-search, metadata]
 Dublin Coreを国立国会図書館が拡張したmetadata schema。日本語図書館catalogで広く採用され、NDL Search APIのresponse基本形。
 
 - DC-NDL（国立国会図書館ダブリンコアメタデータ記述）に従い、各プロトコル（SRU/OpenSearch/OpenURL/OAI-PMH）のresponseが構成される ([[2026-09-30 NDL Search API]])。
-- RDF形式は [DC-NDL（RDF）フォーマット仕様](/renkei/dcndl)。
+- RDF形式は [DC-NDL（RDF）フォーマット仕様](https://ndlsearch.ndl.go.jp/renkei/dcndl)。
 - 英語版のNDL Search API仕様書は2022-08-29で止まり旧システム準拠、新機能の参照は日本語版（2026-09-25付 第1.5版）。
 
 経路設計上の含意:

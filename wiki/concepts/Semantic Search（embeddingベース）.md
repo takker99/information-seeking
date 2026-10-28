@@ -6,7 +6,7 @@ tags: [scholarly-search, semantic-search]
 
 keyword一致ではなく、embedding空間での意味近傍で文献を探す検索方式。書誌APIやDBで別endpointとして提供されることがある。
 
-- OpenAlexは通常のkeyword `search`と別に [Semantic Search](/api/semantic-search/) を提供 ([[2026-09-30 OpenAlex API]])。
+- OpenAlexは通常のkeyword `search`と別に [Semantic Search](https://help.openalex.org/api/semantic-search/) を提供 ([[2026-09-30 OpenAlex API]])。
 - 同じthemeでも語彙が違う関連研究を拾える。[[検索語の展開]]（同義語・訳語）と機能が重なるが、**機械が計算した意味近傍**を使うため、人間が展開しきれない関連も拾える可能性がある。
 - [[2026-09-30 Helsinki Information Seeking Guide]]の「YSOシソーラスで多言語語彙を取る」の**自動版**に相当。
 

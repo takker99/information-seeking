@@ -24,12 +24,12 @@ NDL SearchのAPI仕様概要。SRU / OpenSearch / OpenURLの検索用APIと、OA
 ### metadata schema
 
 - メタデータは [DC-NDL（国立国会図書館ダブリンコアメタデータ記述）](https://www.ndl.go.jp/jp/dlib/standards/meta/index.html) に基づく。各プロトコルのresponseもDC-NDLを基本形とする。
-- RDF形式: [DC-NDL（RDF）フォーマット仕様](/renkei/dcndl)
+- RDF形式: [DC-NDL（RDF）フォーマット仕様](https://ndlsearch.ndl.go.jp/renkei/dcndl)
 
 ### 提供範囲
 
 - NDL Searchで検索できるデータのうち、**許諾が得られたもののみをAPIで提供**。
-- 詳細は[API提供対象DP一覧](/help/api/provider)。データプロバイダごとに利用条件が異なる（営利利用・継続アクセス・事前連絡の有無等）。
+- 詳細は[API提供対象DP一覧](https://ndlsearch.ndl.go.jp/help/api/provider)。データプロバイダごとに利用条件が異なる（営利利用・継続アクセス・事前連絡の有無等）。
 
 ### リクエスト例
 
@@ -40,9 +40,9 @@ NDL SearchのAPI仕様概要。SRU / OpenSearch / OpenURLの検索用APIと、OA
 
 ### 仕様書
 
-- 日本語: [第1.5版 2026-09-25](/file/help/api/specifications/ndlsearch_api_20260925.pdf)
+- 日本語: [第1.5版 2026-09-25](https://ndlsearch.ndl.go.jp/file/help/api/specifications/ndlsearch_api_20260925.pdf)
 - 附録: データプロバイダ一覧とAPI対応表（2026-06-24）、データグループID・mediaType一覧（2024-04-01）、コレクションコード・Access Rights一覧（2025-09-16）
-- 英語版: [Ver.1.24 2022-08-29](/file/help/api/specifications/ndlsearch_api_20220829_en.pdf)（旧システムに基づく）
+- 英語版: [Ver.1.24 2022-08-29](https://ndlsearch.ndl.go.jp/file/help/api/specifications/ndlsearch_api_20220829_en.pdf)（旧システムに基づく）
 
 ## 設計含意
 

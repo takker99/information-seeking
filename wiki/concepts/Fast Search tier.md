@@ -7,7 +7,7 @@ tags: [search-api, performance]
 検索API内でlatency・costを犠牲に精度を下げる低コストオプション。大量リクエストのふるい分けや、リアルタイムUIの裏側に向く。
 
 - Perplexity Search APIで `search_type: "fast"` を指定すると低latency・低cost。\$1.00 / 1000リクエスト ([[2026-09-30 Perplexity Search API]])。
-- 標準tierと並列で存在し、用途で切り替える。SDK互換性のためのworkaroundも[公式ガイド](/docs/search/fast-search#sdk-support)にある。
+- 標準tierと並列で存在し、用途で切り替える。SDK互換性のためのworkaroundも[公式ガイド](https://docs.perplexity.ai/docs/search/fast-search#sdk-support)にある。
 - 概念としては[[2026-09-30 Tavily Search API]]のsearch depthや[[2026-09-30 Exa Search API]]の`fast`/`instant` tierに対応し、各社が「精度と速度のtrade-off」をAPIの側面として出している。
 
 使い分け:
