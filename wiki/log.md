@@ -85,3 +85,10 @@ Deep Research agent conceptページの出典がGemini一社に偏っていた�
 - 新規analyses: 分野間引用断絶の探索事例（Mogami・金谷経路）（確認済みの根拠と未実行の自動ツール経路を区別し、手法検証パイロットの計画と成功判定を記録）
 - 更新: 不在表示から研究ギャップを検出する（関連節に断絶検出手法を追加）・index.md・overview.md
 - lint: DUPLICATE 0（初回は新analysesページの重複リンク1件を指摘し平文化で解消）、ORPHAN 0、index欠損/stale 0、raw切れ 0、sourcesポインタ欠落 0、OPEN_LINKは `[[Keenious]]` のみ。最終79ページ
+
+## [2026-10-29] file-back | 発見モードの概念ページを切り出す
+
+- 検証モード（指定ペアの断絶検定）に対し、ペアを指定しない発見モードを独立ページに切り出した
+- 新規concepts: 未知異分野の発見（意味近接×引用不在）。LBDと多言語embedding・overlay mapsゼロセル列挙・sleeping beauty王子分析・孤立クラスタ検出・LLM系LBDを、発見モードでの使い方と限界付きで収録。引用事象前提の手法の不適性を明記。縮小版パイロットの手順は未実行の提案として明示
+- 更新: 引用ネットワーク断絶の検出手法（関連節に発見モードページを追加）・sourcesページ（Moreau & Yamanishi 2023の「発見が実作物にならない」問題をsubagent①報告の要点に追加）・index.md
+- lint: DUPLICATE 0（初回は新ページ内の重複リンク1件を指摘し関連節から解消）、ORPHAN 0、index欠損/stale 0、raw切れ 0、sourcesポインタ欠落 0、OPEN_LINKは `[[Keenious]]` のみ。最終80ページ
