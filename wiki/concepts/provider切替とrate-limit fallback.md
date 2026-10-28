@@ -38,10 +38,9 @@ API keyが無くても複数providerの無料枠をrotateして動かす「keyle
 ## route記録への含意
 
 - 品質比較のための仕組みではなく、**availability確保の機構**。1つのproviderのrate-limitに全体が引きずられないための防御。結果の質を担保する仕組みは別に必要（[[情報源の評価]]、明示provider固定）
-- bulk呼び出し時に「普段使わないprovider」へ流れた記録は、route評価時に**意図せぬprovider切替**として扱うべき
+- bulk呼び出し時に「普段使わないprovider」へ流れた記録（Hermesのring vendorを含む）は、route評価時に**意図せぬprovider切替**として扱うべき
 - cooldownの共有は便利だが、workspaceをまたぐと独立に扱う必要があり、比較実験の独立性に影響しうる
-- 「特に設定しない」状態でも動くファーストステップになる（Hermesのring、OpenCodeの`random`）。比較実験ではring vendorに流れた記録も意図せぬprovider切替になる
-- ring vendor側の無料枠はSLA無保証。本番運用ではkeyed固定 + rescue pathとして位置付けるのが安全
+- 「特に設定しない」状態でも動くファーストステップになる（Hermesのring、OpenCodeの`random`）。ring vendor側の無料枠はSLA無保証なので、本番運用ではkeyed固定 + rescue pathとして位置付けるのが安全
 
 ## 関連
 
