@@ -58,9 +58,8 @@ Query時は最初に読む。
 ### Agent harness
 
 - [検索providerの抽象化](concepts/検索providerの抽象化.md) — backend差替え可能な薄い層
-- [429 fallback機構](concepts/429 fallback機構.md) — rate-limit時の自動切替
+- [provider切替とrate-limit fallback](concepts/provider切替とrate-limit fallback.md) — OpenCodeの429時provider切替とHermesのkeyless ring+one-shot rescue
 - [検索と抽出のbackend分離](concepts/検索と抽出のbackend分離.md) — search/extractを別providerに
-- [Keyless ringとone-shot rescue](concepts/Keyless ringとone-shot rescue.md) — 無料tier round-robinと救済
 - [結果cacheとfan-out coalesce](concepts/結果cacheとfan-out coalesce.md) — subagent並列時のcache統合
 - [Truncated extractとon-disk全本文](concepts/Truncated extractとon-disk全本文.md) — head/tail window+disk全保存
 - [LLMがURLを選ぶproviderの信頼モデル](concepts/LLMがURLを選ぶproviderの信頼モデル.md) — xAI等のLLM駆動URLの信頼差

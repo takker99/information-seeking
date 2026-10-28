@@ -52,6 +52,6 @@ OpenCodeの公式websearch機能説明。OpenCode本体とは別のproviderを�
 
 ## 関連
 
-- [[検索providerの抽象化]]、[[429 fallback機構]]
+- [[検索providerの抽象化]]、[[provider切替とrate-limit fallback]]
 - [[2026-09-30 Hermes Web Search]]
 - [[問いに応じた情報探索経路の設計]]

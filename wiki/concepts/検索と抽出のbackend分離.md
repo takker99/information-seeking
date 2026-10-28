@@ -24,4 +24,4 @@ Web検索と本文抽出を別model-callable toolとして、独立したprovide
 
 ## 関連
 
-- [[検索providerの抽象化]]、[[429 fallback機構]]
+- [[検索providerの抽象化]]、[[provider切替とrate-limit fallback]]
