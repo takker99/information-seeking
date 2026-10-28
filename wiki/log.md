@@ -75,3 +75,13 @@ Deep Research agent conceptページの出典がGemini一社に偏っていた�
 - 重複節整理: `concepts/claimごとのconfidence score（research report）` の末尾`実例:`節を削除し、固有情報（Scopus AI Key Findings TableのHigh/Medium列が実用形）を制約bulletへ統合
 - `overview.md`: ページ数の記載をやめ、2026-10-29時点の運用に更新
 - lint: DUPLICATE 0、ORPHAN 0、index欠損/stale 0、raw切れ 0、sourcesポインタ欠落 0、OPEN_LINKは`[[Keenious]]`のみ。最終76ページ
+
+## [2026-10-29] file-back | PGE-2026Aの分野間引用断絶探索を編み込む
+
+- 別Wiki（PGE-2026A）で2026-10-28に実行した分野間引用断絶の探索を、2つ目の実地ケースとしてfile-backした
+- 新規raw 3本: subagent①計量書誌学相談記録・subagent②系譜ツール調査記録・メインセッション検証報告。OpenCodeのセッションDBから会話本文を抽出し、subagent出力の文字化けは取得時点のまま保持（修正済みの内容はメイン検証報告側を正とする）
+- 新規sources: 2026-10-28 引用断絶検出手法のsubagent相談（PGE-2026A）
+- 新規concepts: 引用ネットワーク断絶の検出手法（3次元フレーム・既存手法の落とし穴・3限界・名寄せ・ハイブリッド現実解・subagent実行用手順）。自動ツール経路は未実行であることを明示
+- 新規analyses: 分野間引用断絶の探索事例（Mogami・金谷経路）（確認済みの根拠と未実行の自動ツール経路を区別し、手法検証パイロットの計画と成功判定を記録）
+- 更新: 不在表示から研究ギャップを検出する（関連節に断絶検出手法を追加）・index.md・overview.md
+- lint: DUPLICATE 0（初回は新analysesページの重複リンク1件を指摘し平文化で解消）、ORPHAN 0、index欠損/stale 0、raw切れ 0、sourcesポインタ欠落 0、OPEN_LINKは `[[Keenious]]` のみ。最終79ページ
