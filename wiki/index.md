@@ -116,9 +116,11 @@ Query時は最初に読む。
 - [2026-09-30 Illinois Citation Chasing](sources/2026-09-30 Illinois Citation Chasing.md) — 後方/前方citation chasingとcitation indexing database
 - [2026-10-01 SMS-2026S-report Scopus AI探索記録](sources/2026-10-01 SMS-2026S-report Scopus AI探索記録.md) — 別Wikiで実行したScopus AI Deep Research複数ラウンド（13レポート）のraw記録一覧
 - [2026-10-28 引用断絶検出手法のsubagent相談（PGE-2026A）](sources/2026-10-28 引用断絶検出手法のsubagent相談（PGE-2026A）.md) — 計量書誌学subagentの手法検証・実測と親セッション検証。M&K 1953不在、RMP 1996にMogami系ゼロ
+- [2026-10-29 引用断絶検出手法のパイロット報告（分野ペアA・D）](sources/2026-10-29 引用断絶検出手法のパイロット報告（分野ペアA・D）.md) — 検証モード手順のsubagent単独実行2本の報告。A: JSPT→粒状物理のゼロセル、D: CT計測の経路置換型断絶
 
 ## analyses
 
 - [問いに応じた情報探索経路の設計](analyses/問いに応じた情報探索経路の設計.md) — 探索経路の初期研究課題と、14 sources再ingest後の設計パターン整理、他Wikiの問いを探索ケースにする運用
 - [SMS-2026S-report Scopus AI Deep Research論文探索](analyses/SMS-2026S-report Scopus AI Deep Research論文探索.md) — 学術限定DR複数ラウンド×キュレーション×DOI検証×fulltext ingestの実地ケース。AIレポートを地図、論文を根拠とする二段構成が効いた
 - [分野間引用断絶の探索事例（Mogami・金谷経路）](analyses/分野間引用断絶の探索事例（Mogami・金谷経路）.md) — subagent並列相談+spot-check検証+回顧seed手作業で断絶と位相分離を検出した2つ目の実地ケース。自動ツール経路は未検証
+- [手法検証パイロットの実施記録（分野ペアA・D）](analyses/手法検証パイロットの実施記録（分野ペアA・D）.md) — 成功判定を渡さないusability-test相当のパイロット2本。4基準合格、手順書の差分5項を抽出
