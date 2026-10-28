@@ -62,6 +62,5 @@ Crossrefに登録された学術コンテンツのmetadataを取得する公式R
 ## 関連
 
 - [[DOI書誌メタデータとPolite pool]]、[[Content negotiation（書誌metadata）]]
-- [[学術メタデータAPIの書誌グラフ]]、[[引用追跡]]
-- [[2026-09-30 OpenAlex API]]
+- [[学術メタデータAPIの書誌グラフ]]
 - [[問いに応じた情報探索経路の設計]]

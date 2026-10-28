@@ -15,4 +15,4 @@ tags: [search-api, filtering]
 
 ## 関連
 
-- [[ドメインフィルタ]]、[[検索depthとcreditのトレードオフ]]
+- [[検索depthとcreditのトレードオフ]]

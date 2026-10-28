@@ -77,7 +77,7 @@ Query時は最初に読む。
 - [Semantic Search（embeddingベース）](concepts/Semantic Search（embeddingベース）.md) — embedding近傍の文献検索
 - [Dehydrated nested entity](concepts/Dehydrated nested entity.md) — ID+nameのstub返却
 - [OpenAlex OQL](concepts/OpenAlex OQL.md) — 保存可能なquery言語
-- [DOI書誌メタデータとPolite pool](concepts/DOI書誌メタデータとPolite pool.md) — DOI起点APIとmailo識別子
+- [DOI書誌メタデータとPolite pool](concepts/DOI書誌メタデータとPolite pool.md) — DOI起点APIとmailto識別子
 - [Content negotiation（書誌metadata）](concepts/Content negotiation（書誌metadata）.md) — 単一recordの形式切替
 
 ### 図書館・書誌

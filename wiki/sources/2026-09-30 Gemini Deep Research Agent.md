@@ -62,7 +62,7 @@ Google Cloud Gemini Enterprise Agent PlatformのDeep Research Agent利用ドキ�
 ### 設計含意
 
 - Plan→Search→Iterate→Outputのloopは[[content typeで探索先を選ぶ]]や[[引用追跡]]を自動化したものに相当する。人間は問いと初期方針を提示し、agentがsource選択と反復を担う。
-- grounding sourceにMCP・Agent Search・enterprise dataまで並べると、1つのagent経路で[[query fan-out]]と[[引用追跡]]の両方を含むsource graph探索を実行できる。
+- grounding sourceにMCP・Agent Search・enterprise dataまで並べると、1つのagent経路で[[query fan-out]]と引用追跡の両方を含むsource graph探索を実行できる。
 - 引用はinlineでレポートに埋め込まれるが、出典の正確さは人間が確認する単位は依然残る。
 
 ## 関連

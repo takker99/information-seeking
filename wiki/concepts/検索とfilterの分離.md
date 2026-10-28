@@ -7,7 +7,7 @@ tags: [scholarly-search, design]
 学術メタデータAPIで、全文検索（search）と構造化絞り込み（filter）を別endpoint/別パラメータとして提供する設計。
 
 - OpenAlex: 各endpointにlist、filter、search、sort、group_by、page、select、get-singleの操作が共通 ([[2026-09-30 OpenAlex API]])。`filter`はIDやenum・数値・日付の構造条件、`search`は全文/keywordの類似検索。
-- 推奨: **IDsでfilter**、曖昧なnameでfilterしない。"Smith"は数千author。先にOpenAlex IDをlookupしてからfilterする ([[2026-09-30 OpenAlex API]])。
+- 推奨: **IDsでfilter**、曖昧なnameでfilterしない。"Smith"は数千author。先にOpenAlex IDをlookupしてからfilterする (2026-09-30 OpenAlex API)。
 - DOI/ORCID/ROR/ISSNは直接filterに使える。
 
 [[検索語の展開]]（[[2026-09-30 Helsinki Information Seeking Guide]]）との接続:

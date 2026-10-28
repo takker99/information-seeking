@@ -77,5 +77,4 @@ OpenAlexの公式REST API reference。works / authors / sources / institutions /
 ## 関連
 
 - [[学術メタデータAPIの書誌グラフ]]、[[検索とfilterの分離]]、[[Semantic Search（embeddingベース）]]、[[Dehydrated nested entity]]、[[OpenAlex OQL]]
-- [[2026-09-30 Crossref REST API]]
 - [[問いに応じた情報探索経路の設計]]

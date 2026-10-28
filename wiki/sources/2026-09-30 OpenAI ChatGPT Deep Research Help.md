@@ -63,7 +63,5 @@ ChatGPT（および Work / Codex）のDeep Research機能のconsumer向けhelp�
 
 ## 関連
 
-- [[Deep Research agent]]、[[マルチソースグラウンディング]]
-- [[2026-09-30 OpenAI Deep Research API]]
-- [[2026-09-30 Gemini Deep Research Agent]]
+- [[Deep Research agent]]
 - [[問いに応じた情報探索経路の設計]]

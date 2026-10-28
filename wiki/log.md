@@ -46,3 +46,11 @@ Deep Research agent conceptページの出典がGemini一社に偏っていた�
 - AGENTS.md の汎用規則を template に合わせ、情報探索固有の運用（情報探索手順・出典・API確認日）は維持
 - index.md は維持（PGE-2026Aのindex.md廃止実験は適用しない）
 - 既存ページの重複wikilinkは未整理。新lintが検出するため、今後のlint/file-backで整理する
+
+## [2026-10-28] refactor | template schemaに合わせて重複リンクを整理
+
+- 47ページの重複wikilink 156ペア（余分な出現195回）を解消。関連節の再掲は削除し、本文・表内の2回目以降は平文化した。analysesの47概念列挙はリストを保持したまま平文の列挙にした
+- 出典追加: [[探索履歴の偏り]]・[[問いの反転]]の実例節に [[2026-10-01 SMS-2026S-report Scopus AI探索記録]] を引用
+- 意味修正: 「生結果と回答生成の分離」と「検索と抽出のbackend分離」は分離する対象が異なる別軸であることを明記
+- index.mdのtypo（mailo→mailto）を修正、overview.mdに最初の実地ケースと現在の規模を追記
+- lint: DUPLICATE 156→0、ORPHAN 0、index欠損/stale 0、raw切れ 0、sourcesポインタ欠落 0

@@ -30,27 +30,26 @@ tags: [deep-research, agent]
 
 1. **Multi-agent粒度**: Gemini/OpenAI/Perplexityはmanaged model内にloop。Anthropicはorchestrator-workerを**明示**。xAIは4/16 agentsの離散値。Scopusはsingle reasoning engine
 2. **Sourceの開閉**: Scopus = closed curated / Perplexity/OpenAI/Anthropic = web+premium data+MCP / Grok = web+X+code / Gemini = web+Workspace+file
-3. **Citationの粒度**: 単純なURL列挙 (Gemini/Help) ↔ inline annotation ([[2026-09-30 OpenAI Deep Research API]] の`annotations` array) ↔ [[引用位置特定のCitationAgent]] (Anthropic) ↔ field grounding+confidence ([[2026-09-30 Exa Search API]]) ↔ reference+confidence score per claim ([[2026-09-30 Scopus AI Deep Research]])
+3. **Citationの粒度**: 単純なURL列挙 (Gemini/Help) ↔ inline annotation (2026-09-30 OpenAI Deep Research API の`annotations` array) ↔ [[引用位置特定のCitationAgent]] (Anthropic) ↔ field grounding+confidence ([[2026-09-30 Exa Search API]]) ↔ reference+confidence score per claim (2026-09-30 Scopus AI Deep Research)
 4. **Prompting中間段**: ChatGPT版は3-step (clarification / prompt rewriting / research) を内部実行、API版はcaller責務。Perplexity Advancedは clarifying questionsをUX化
-5. **Cost model**: token消費 ([[2026-09-30 Anthropic Multi-Agent Research System]] は multi-agent ~15x chat) ↔ tool call数課金 ([[2026-09-30 xAI Grok Multi-Agent Research]]) ↔ credit ([[2026-09-30 Tavily Search API]]のsearch_depth)
+5. **Cost model**: token消費 (2026-09-30 Anthropic Multi-Agent Research System は multi-agent ~15x chat) ↔ tool call数課金 (2026-09-30 xAI Grok Multi-Agent Research) ↔ credit ([[2026-09-30 Tavily Search API]]のsearch_depth)
 6. **途中のsteer**: Perplexityはresearch中のfollow-up、OpenAIはplan review / interrupt、Anthropicは設計上lead agentが動的にsubagent生成・戦略修正
 
 ## 経路設計上の位置
 
-- [[マルチソースグラウンディング]]の具象化。[[MCPサーバー経由のsource拡張]] ([[2026-09-30 Gemini Deep Research Agent]]、[[2026-09-30 OpenAI Deep Research API]]) で学術・企業内dataへの経路を拡張できる
+- マルチソースグラウンディングの具象化。[[MCPサーバー経由のsource拡張]] (2026-09-30 Gemini Deep Research Agent、2026-09-30 OpenAI Deep Research API) で学術・企業内dataへの経路を拡張できる
 - [[content typeで探索先を選ぶ]]の「総合report」層を担う。[[検索語の展開]] → Deep Research → 結果検証 ([[情報源の評価]]) → 必要なら[[引用追跡]]で深掘り、が典型flow
-- [[検索結果の広げ方と絞り方]]の自動化。Scopusの[[claimごとのconfidence score（research report）]]がconsumer向けの[[情報源の評価]]材料を提供
+- [[検索結果の広げ方と絞り方]]の自動化。Scopusの[[claimごとのconfidence score（research report）]]がconsumer向けの情報源の評価材料を提供
 - 個人レベルの[[検索過程の記録]] ([[2026-09-30 Illinois Library Search Strategies]]) はDeep Researchの実行過程を模倣するテンプレート
 
 ## 共通する制約
 
-- **Preview/beta/legacy**: 多くはPreview・beta・model deprecation予定 ([[2026-09-30 OpenAI Deep Research API]] は2026-07-23 shutdown、Perplexity Sonar Chat Completionsは2026-09-27 shutdown)。長期route評価ではmodel/preset移行の追跡が必須
-- **機微データ・proprietary data**: Preview段階では入力禁止 ([[2026-09-30 Gemini Deep Research Agent]])、MCP経由の私的dataは read-onlyアクセス ([[2026-09-30 OpenAI Deep Research API]])
+- **Preview/beta/legacy**: 多くはPreview・beta・model deprecation予定 (2026-09-30 OpenAI Deep Research API は2026-07-23 shutdown、Perplexity Sonar Chat Completionsは2026-09-27 shutdown)。長期route評価ではmodel/preset移行の追跡が必須
+- **機微データ・proprietary data**: Preview段階では入力禁止 (2026-09-30 Gemini Deep Research Agent)、MCP経由の私的dataは read-onlyアクセス (2026-09-30 OpenAI Deep Research API)
 - **Consumer版 ≠ API版**: ChatGPT版の3-step中間処理やPro model availabilityなどはAPI版に[[生成AIで問いと検索語を作る]]相当の前段処理をcaller責務で再現する必要がある
 
 ## 関連
 
-- [[マルチソースグラウンディング]]、[[非同期研究タスク]]、[[マルチソースグラウンディング]]、[[LeadResearcher_Subagent 役割分担（orchestrator-worker）]]、[[引用位置特定のCitationAgent]]、[[claimごとのconfidence score（research report）]]
-- [[2026-09-30 Gemini Deep Research Agent]]、[[2026-09-30 OpenAI Deep Research API]]、[[2026-09-30 Anthropic Multi-Agent Research System]]、[[2026-09-30 xAI Grok Multi-Agent Research]]、[[2026-09-30 Perplexity Sonar Deep Research to Agent API Migration]]、[[2026-09-30 Scopus AI Deep Research]]
+- [[非同期研究タスク]]、[[LeadResearcher_Subagent 役割分担（orchestrator-worker）]]
 - [[SMS-2026S-report Scopus AI Deep Research論文探索]] — 学術限定DRを13ラウンド実行した実地ケース。「地図」として使いfulltextで根拠を確認する二段構成
 - [[問いに応じた情報探索経路の設計]]

@@ -19,7 +19,3 @@ multi-agent systemで、subagentの出力artifactをfilesystem等に直接書き
 
 - filesystem書き込み権限をagentに与える必要があり、[[情報源の評価]]の観点で副作用リスク管理が必須
 - code execution sandbox ([[2026-09-30 OpenAI Deep Research API]]のcode interpreter等) の中で閉じると安全
-
-## 関連
-
-- [[マルチソースグラウンディング]]、[[MCPサーバー経由のsource拡張]]

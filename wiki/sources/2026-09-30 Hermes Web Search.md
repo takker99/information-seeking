@@ -95,5 +95,4 @@ search-only: Brave / DDGS / xAI / OpenAI Native。これらに`web_extract`を�
 ## 関連
 
 - [[検索と抽出のbackend分離]]、[[Keyless ringとone-shot rescue]]、[[結果cacheとfan-out coalesce]]、[[Truncated extractとon-disk全本文]]、[[LLMがURLを選ぶproviderの信頼モデル]]
-- [[2026-09-30 OpenCode Web Search]]
 - [[問いに応じた情報探索経路の設計]]

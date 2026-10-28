@@ -83,5 +83,4 @@ Exa `/search` endpointの公式API reference。Web検索と検索結果からの
 
 - [[Multi-step deep search]]、[[構造化出力schema]]、[[Agent操舵フィールド]]、[[ページ本文の段階取得]]、[[履歴snapshot取得]]
 - [[MCPサーバー経由のsource拡張]]
-- [[2026-09-30 Perplexity Search API]]、[[2026-09-30 Tavily Search API]]
 - [[問いに応じた情報探索経路の設計]]

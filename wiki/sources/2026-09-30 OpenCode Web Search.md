@@ -53,5 +53,5 @@ OpenCodeの公式websearch機能説明。OpenCode本体とは別のproviderを�
 ## 関連
 
 - [[検索providerの抽象化]]、[[429 fallback機構]]
-- [[2026-09-30 Exa Search API]]、[[2026-09-30 Tavily Search API]]、[[2026-09-30 Hermes Web Search]]
+- [[2026-09-30 Hermes Web Search]]
 - [[問いに応じた情報探索経路の設計]]

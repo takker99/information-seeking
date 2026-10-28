@@ -60,5 +60,4 @@ Perplexity Search APIの開発者向けquickstartガイド。リアルタイム�
 ## 関連
 
 - [[生検索結果APIと回答APIの分離]]、[[Fast Search tier]]、[[Multi-Query検索]]、[[ドメインフィルタ]]
-- [[2026-09-30 Exa Search API]]、[[2026-09-30 Tavily Search API]]
 - [[問いに応じた情報探索経路の設計]]

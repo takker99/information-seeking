@@ -52,13 +52,12 @@ single request内で: reason → act → observe → continue。[[2026-09-30 Ant
 ## 設計含意
 
 - Perplexityは2026年内にDeep Researchを「独立model」から「Agent API preset」へ移行。[[Deep Research agent]]の実装方針は会社ごとに分かれる: **専用model** (Gemini Deep Research agent, OpenAI o3-deep-research legacy) ↔ **agent loop preset** (Perplexity Agent API) ↔ **multi-agent orchestration** (Anthropic Research, xAI Multi-agent)
-- 単一endpointでcross-vendor model選択 ([[マルチソースグラウンディング]]) は、route評価で「provider」を変数として扱える
+- 単一endpointでcross-vendor model選択 (マルチソースグラウンディング) は、route評価で「provider」を変数として扱える
 - `xhigh` presetはbenchmarkトップだが[[検索depthとcreditのトレードオフ]]に似たcost・latency trade-offが背後にあると推測
 - Open Responses standard準拠は将来[[構造化出力schema]]を含むAPI仕様の標準化を促す可能性
 
 ## 関連
 
-- [[Deep Research agent]]、[[マルチソースグラウンディング]]、[[非同期研究タスク]]
+- [[非同期研究タスク]]
 - [[2026-09-30 Perplexity Advanced Deep Research Help]] — consumer側
-- [[2026-09-30 Anthropic Multi-Agent Research System]]、[[2026-09-30 OpenAI Deep Research API]]、[[2026-09-30 Gemini Deep Research Agent]]
 - [[問いに応じた情報探索経路の設計]]

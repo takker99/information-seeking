@@ -19,7 +19,3 @@ APIやデータセットがどのライセンスで公開されているかを�
 - [[情報源の評価]]で「公開されている」ことと「自由に再利用できる」ことは別。open access（学術）とopen data（API）は別軸
 - [[マルチソースグラウンディング]]（[[2026-09-30 Gemini Deep Research Agent]]）で複数sourceを統合する場合、各sourceのlicenseが回答の再利用性に影響する
 - [[引用追跡]]で[[履歴snapshot取得]]（[[2026-09-30 Exa Search API]]）を使う場合、取得対象pageのcopyrightとsnapshotの再配布条件に留意
-
-## 関連
-
-- [[情報源の評価]]

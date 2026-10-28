@@ -81,7 +81,5 @@ User（citations付き回答）
 
 ## 関連
 
-- [[Deep Research agent]]、[[マルチソースグラウンディング]]、[[MCPサーバー経由のsource拡張]]、[[構造化出力schema]]
 - [[LeadResearcher_Subagent 役割分担（orchestrator-worker）]]、[[引用位置特定のCitationAgent]]、[[LLM-as-judge評価rubric]]、[[Interleaved thinking]]、[[subagentからfilesystemへ直接output]]
-- [[2026-09-30 Gemini Deep Research Agent]]、[[2026-09-30 OpenAI Deep Research API]]
 - [[問いに応じた情報探索経路の設計]]

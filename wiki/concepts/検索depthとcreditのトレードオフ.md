@@ -7,7 +7,7 @@ tags: [search-api, cost]
 検索API内でlatency・精度・snippet量をdepth tierで切替え、課金を連動させる設計。
 
 - Tavily `search_depth`は `advanced`（2 credits）/ `basic`（1）/ `fast`（1）/ `ultra-fast`（1）。`advanced`と`basic`/`fast`は複数semantically relevant chunks/URL、`ultra-fast`はURLごとにNLP summary 1つ ([[2026-09-30 Tavily Search API]])。
-- 課金差: `advanced`のみ2 credits。`auto_parameters`有効化で`advanced`に**暗黙昇格**する場合があり、costが2倍になりうる ([[2026-09-30 Tavily Search API]])。
+- 課金差: `advanced`のみ2 credits。`auto_parameters`有効化で`advanced`に**暗黙昇格**する場合があり、costが2倍になりうる (2026-09-30 Tavily Search API)。
 - 類似の段階設計: [[Fast Search tier]]（Perplexity）、[[Multi-step deep search]]（Exaの`deep`/`deep-reasoning`）。単位は credits / 秒 / USD と各社で違うが、共通のトレードオフ軸がある。
 
 経路設計上の含意:
