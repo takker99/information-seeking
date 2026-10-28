@@ -22,4 +22,4 @@ tags: [search-api, design]
 
 ## 関連
 
-- [[Fast Search tier]]、[[ドメインフィルタ]]
+- [[検索depthとcreditのトレードオフ]]、[[ドメインフィルタ]]

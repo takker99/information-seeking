@@ -81,6 +81,6 @@ Exa `/search` endpointの公式API reference。Web検索と検索結果からの
 
 ## 関連
 
-- [[Multi-step deep search]]、[[構造化出力schema]]、[[Agent操舵フィールド]]、[[ページ本文の段階取得]]
+- [[検索depthとcreditのトレードオフ]]、[[構造化出力schema]]、[[Agent操舵フィールド]]、[[ページ本文の段階取得]]
 - [[MCPサーバー経由のsource拡張]]
 - [[問いに応じた情報探索経路の設計]]

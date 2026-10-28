@@ -22,4 +22,4 @@ tags: [search-api, agent-design]
 
 ## 関連
 
-- [[Multi-step deep search]]、[[構造化出力schema]]
+- [[検索depthとcreditのトレードオフ]]、[[構造化出力schema]]

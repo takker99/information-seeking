@@ -48,14 +48,12 @@ Query時は最初に読む。
 ### 検索・抽出API
 
 - [生検索結果APIと回答APIの分離](concepts/生検索結果APIと回答APIの分離.md) — PerplexityのSearch APIとAgent API
-- [Fast Search tier](concepts/Fast Search tier.md) — 低latency・低costのtier
 - [Multi-Query検索](concepts/Multi-Query検索.md) — 1リクエストに複数query
 - [ドメインフィルタ](concepts/ドメインフィルタ.md) — allowlist/denylistとrestrict/preferの適用モード
-- [Multi-step deep search](concepts/Multi-step deep search.md) — synthesisを含むdeep type
 - [構造化出力schema](concepts/構造化出力schema.md) — JSON Schemaでoutputを制御
 - [Agent操舵フィールド](concepts/Agent操舵フィールド.md) — objective・systemPromptでの操舵
 - [ページ本文の段階取得](concepts/ページ本文の段階取得.md) — text/highlights/summaryの段階取得、cache制御と履歴snapshot
-- [検索depthとcreditのトレードオフ](concepts/検索depthとcreditのトレードオフ.md) — Tavilyのsearch_depth課金額とauto_parametersの暗黙昇格
+- [検索depthとcreditのトレードオフ](concepts/検索depthとcreditのトレードオフ.md) — Tavilyのsearch_depth課金・auto_parametersの暗黙昇格、PerplexityのFast tier、Exaのmulti-step deep search
 
 ### Agent harness
 
