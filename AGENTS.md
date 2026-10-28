@@ -47,30 +47,31 @@ wiki/
 ## 執筆の機械要件
 
 - sourcesページは `raw:` または `source_url:` の少なくとも一方を含める。引用の流れ: raw/source URL → sourceページ → concept/entity
-- sourcesページのfrontmatter（`raw:` 必須 等）の形式は `.agents/skills/llm-wiki-ingest/SKILL.md` に定義
+- sourcesページのfrontmatter（`raw:` もしくは `source_url:` の1以上を必須（`accessed:` 任意）等）の形式は `.agents/skills/llm-wiki-write/SKILL.md` に定義
 - 本文を保存できない書籍・論文・有料資料などは、著作権や利用条件を守り、書誌情報・版・ページ等の所在を記録する。インタビューや観察は、同意とプライバシーに配慮した記録を `raw/` に置く
 - 外部サービス/APIの機能・価格・利用条件に関する主張は、確認した公式資料等に結び付け、確認日を記録する。未確認の機能は未確認と明示する
 - frontmatter は任意（sources 以外）。書く場合はページ種別に応じて `tags:` / `dates:` / `status:` / `sources:` 等のメタ情報を付加してよい。書かなくても wiki は機能する
 - concepts/entities の出典は本文中に sources ページへの [[wikilink]] を置く (claim粒度)。analyses の frontmatter `sources:` は入力 raw データ・スクリプトの列挙 (reproducibility manifest) という別の意味を持ち、出典では表現しない
+- 外部URLを出典にする場合は frontmatter の `source_url:`（と任意で `accessed:`）を使う。
 - 著者-年表記 (`(Otsu, 1979)` 等の LLM 一般知識に由来する文献表記) は帰属引用 (手法の命名・背景) ならこのままでよい。外部論文の**内容**を主張の根拠に載せる前に、原典に相当する sources ページを作る
 - `index.md` の各エントリは1行: `- [ページタイトル](パス) — 1行要約`。index.mdはページから導出可能なビューのキャッシュ: 陳腐化・欠損時はページ冒頭を読んで再生成してよい（lintが検証）
 - `log.md` の各エントリ: 見出し `## [YYYY-MM-DD] action | 短い題名` + 詳細は本文
-- 赤リンク（未作成ページへのリンク）は許容: 1ページのみから参照されるリンクのためにページを作らない。2ページ以上から参照されるようになったらページ作成を検討
+- オープンリンク（未作成ページへのリンク）は許容: 1ページのみから参照されるリンクのためにページを作らない。2ページ以上から参照されるようになったらページ作成を検討
 - wiki/のページは追記ではなく**書き換え**で更新する。既存の記述に手を加えず追記だけするのはwikiではない。raw/がsource of truthなので書き換え・削除は自由
-- concepts/はatomicに保つ: 1ページ1概念・簡潔に。育って肥大化したら分割（株分け）を人間に提案する
+- concepts/はatomicに保つ: 1ページ1概念・簡潔に。育って肥大化したら分割（株分け）を人間に提案する。分割判定の後、再-ingestで該当節が成長したら再提案してよい
 - ページタイプ別の簡潔さの目安: concepts/ 強く簡潔（atomic）・entities/ 簡潔・sources/ 中程度・analyses/ 長め可
 
 ## 初期化（初回のみ）
 
 1. 人間がpurposeを確認・確定する（空欄のままなら運用しない）
 2. 最初の探索対象となる問いは人間が指定する。必要な情報源は問いに応じて探索する
-3. 「このソースをingestして」と依頼されたら `.agents/skills/llm-wiki-ingest/SKILL.md` を読んで従う
+3. 「このソースをingestして」と依頼されたら `.agents/skills/llm-wiki-write/SKILL.md` を読んで従う
 
 ## オペレーション
 
 ### Ingest
 
-「ingestして」と言われたら `.agents/skills/llm-wiki-ingest/SKILL.md` を読んで従う。
+「ingestして」と言われたら `.agents/skills/llm-wiki-write/SKILL.md` を読んで従う。
 
 ### 情報探索
 
@@ -85,8 +86,8 @@ wiki/
 
 ### Query（常時行動）
 
-1. まず `index.md` を読んで関連ページを探す
-2. 有望なページを読み、必要に応じてwikilinkを辿る
+1. `bash .agents/scripts/search-pages.sh "<検索語>"`と`wiki/index.md`で関連ページや未作成リンクを探す。見つからない時は`--fulltext`で本文全文を検索する
+2. 有望なページや複数ページから参照される未作成リンクは、必ず`bash .agents/scripts/read-page.sh "<タイトル>"`で読む。1 hop・2 hopの関連ページ一覧はread-page.shが末尾に付けるもので、`read`で直接読むと得られない。末尾の関連一覧と要約から深掘り先を選んで辿る。巨大な2 hopは`--no-2hop` / `--2hop-limit <N>` で絞ってよい。再読や部分読み（offset/limit）等で直接`read`した場合は、回答末尾に`direct-read`と1行明示する
 3. `[[wikilink]]`引用付きで回答を総合する
 4. 回答後、「これをwikiページとしてfile-backする？」と提案する
 
@@ -100,13 +101,12 @@ wiki/
 実質的なQuery回答の後や、作業（実装・議論・調査）中に生まれた知見の後は、
 wikiページとして保存するか提案する。消えていく知識をデフォルトで保存する方向にする。
 
-承諾されたら analyses/ か concepts/ に作成し、既存ページへのwikilinkを張る。
-明らかに影響を受ける既存ページがあればリンク・記述を更新し、矛盾が生じたら明示する。
-index.md と log.md を更新する。
+承諾されたら `.agents/skills/llm-wiki-write/SKILL.md` を読んで従う。
+探索事例は `analyses/` に、再利用できる方法は `concepts/` に置く。
 
 ## よくあるパターン
 
 - 「このPDF/URLをingestして」 → ソースを `raw/` にアーカイブ（人間が依頼した場合のみ）し、ingest手順に従う。要点を議論し、sources/ページを作成、concepts/entities/index/logを更新
-- 「Xについて知ってる？」 → index.mdを読む → 関連ページ → 回答を総合 → file-backを提案
+- 「Xについて知ってる？」 → search-pages.sh/index.mdで関連ページを探す → read-page.shで読み1 hop・2 hopを辿る → 回答を総合 → file-backを提案
 - 「wikiをlintして」 → lint手順に従い、機械+意味チェックを実行し、重大度別に報告
 - 「次に何を読むべき？」 → index.mdで薄いページ、出典のない孤立概念、未回答の疑問を確認

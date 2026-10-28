@@ -37,3 +37,12 @@ Deep Research agent conceptページの出典がGemini一社に偏っていた�
 
 [[SMS-2026S-report Scopus AI Deep Research論文探索]]の記録と本Wikiの概念群を突き合わせ、単独では見えなかった知見6点を抽出・file-back。新規concept 3件: [[不在表示から研究ギャップを検出する]]（閉じたcorpus上のsemantic不在断定=negative survey近似）、[[探索履歴の偏り]]（記録の非対称が後の判断を歪める）、[[問いの反転]]（mismatch→向きの設計ミスとして修理、素材を使い回すpivot）。既存concept 3件を更新: [[query fan-out]]（語彙差駆動の分解という変種）、[[claimごとのconfidence score（research report）]]（判定対象はclaimでcitation metadataは別判定——High confidence行の引用に誤りが潜む）、[[検索過程の記録]]（本人の記憶の混同を検出する効果を追加）。analysesページに「Wiki知見との交差で見えた点」節を追加。
 (touched 3 new concepts + 3 concept updates + analyses + index/log)
+
+## [2026-10-28] migrate | template 2026-10-28版を適用
+
+- `.agents/skills/llm-wiki-write` を導入し、旧 `llm-wiki-ingest` を置き換え
+- `.agents/scripts/` に search-pages.sh / read-page.sh / diagnose-wiki.sh / number-dup-check.sh を追加
+- lint を template 版へ更新（オープンリンク分類、重複wikilink、raw参照、sourcesポインタ等）
+- AGENTS.md の汎用規則を template に合わせ、情報探索固有の運用（情報探索手順・出典・API確認日）は維持
+- index.md は維持（PGE-2026Aのindex.md廃止実験は適用しない）
+- 既存ページの重複wikilinkは未整理。新lintが検出するため、今後のlint/file-backで整理する
