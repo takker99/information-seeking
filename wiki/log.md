@@ -62,3 +62,16 @@ Deep Research agent conceptページの出典がGemini一社に偏っていた�
 - リンク更新: `sources/2026-09-30 OpenAI ChatGPT Deep Research Help` は `[[ドメインフィルタ|include_domains_mode restrict/prefer]]`、`sources/2026-09-30 Tavily Search API` の関連節と `analyses/問いに応じた情報探索経路の設計` の表は統合先の既存リンクに寄せた。旧タイトルへのwikilinkは0
 - `index.md` は旧2行を削除し、統合先2行の要約にrestrict/prefer・auto_parametersを含めた
 - lint: DUPLICATE 0、ORPHAN 0、index欠損/stale 0、raw切れ 0、sourcesポインタ欠落 0、OPEN_LINKは `[[Keenious]]` のみ
+
+## [2026-10-29] refactor | M2/M4/M5の概念統合とindex再編
+
+承認済みrefactoringの残りを実行。index維持・conceptsのatomic性・事実と出典の不変を保った。
+
+- M2: `concepts/履歴snapshot取得.md` を `concepts/ページ本文の段階取得.md` に統合。`## 履歴snapshot（特定時点の取得）` 節として `snapshotAsOf` のISO 8601指定・stored version返却・live取得なし・`maxAgeHours`/`subpages`との関係・用途（研究reproducibility、archive救済、監査差分）を収めた。旧ページは削除
+- M4: `concepts/Fast Search tier.md` と `concepts/Multi-step deep search.md` を `concepts/検索depthとcreditのトレードオフ.md` に統合。Tavilyの`search_depth`/creditと既存のauto_parameters節を維持したまま、`## Perplexity Fast Search tier`（`search_type: "fast"`、$1.00/1000リクエスト、SDK互換workaround）と`## Exa Multi-step deep search`（`deep`/`deep-reasoning`/`deep-lite`、`additionalQueries`、Deep Research agentとの対応）を追加。旧2ページは削除
+- M5: `concepts/429 fallback機構.md` と `concepts/Keyless ringとone-shot rescue.md` を新規 `concepts/provider切替とrate-limit fallback.md` に統合。OpenCodeの429時cooldown切替、Hermesのkeyless ring + one-shot rescue、両者の共通パターンと差異（切替契機・切替先・key無し動作・失敗時挙動・無効化）、route記録への含意を比較表付きで整理。旧2ページは削除
+- リンク更新: 旧タイトルへのwikilinkは0。表示名で旧名を残したのは `concepts/オープンデータ公開条件（CC BY 4.0等）` の `[[ページ本文の段階取得|履歴snapshot取得]]` のみ。`analyses/問いに応じた情報探索経路の設計` の47概念列挙は平文の履歴記述として維持し、設計パターン節の3項目は統合後の名称に合わせた
+- `index.md`: 統合で旧4行を削除し、統合先2行の要約を更新。conceptsに`### 実地ケース由来の方法論`を新設し、探索履歴の偏り・問いの反転・不在表示から研究ギャップを検出するの3行を移動（要約は不変）
+- 重複節整理: `concepts/claimごとのconfidence score（research report）` の末尾`実例:`節を削除し、固有情報（Scopus AI Key Findings TableのHigh/Medium列が実用形）を制約bulletへ統合
+- `overview.md`: ページ数の記載をやめ、2026-10-29時点の運用に更新
+- lint: DUPLICATE 0、ORPHAN 0、index欠損/stale 0、raw切れ 0、sourcesポインタ欠落 0、OPEN_LINKは`[[Keenious]]`のみ。最終76ページ

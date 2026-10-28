@@ -16,8 +16,6 @@ Query時は最初に読む。
 - [検索テクニック](concepts/検索テクニック.md) — Boolean演算子・phrase search・truncation・advanced search・field制限
 - [検索結果の広げ方と絞り方](concepts/検索結果の広げ方と絞り方.md) — 結果量に応じた調整とdatabase切替
 - [検索過程の記録](concepts/検索過程の記録.md) — search journalの項目と運用。本人の記憶の校正装置でもある
-- [探索履歴の偏り](concepts/探索履歴の偏り.md) — 蓄積した記録の非対称が後の比較判断にバイアスを与える
-- [問いの反転](concepts/問いの反転.md) — mismatch発覚時に問いを逆向きに組み替え、素材を使い回すpivot
 - [content typeで探索先を選ぶ](concepts/content typeで探索先を選ぶ.md) — 必要な資料種からdatabase・guideを選ぶ
 - [引用追跡](concepts/引用追跡.md) — 後方/前方のcitation graph辿り
 - [情報源の評価](concepts/情報源の評価.md) — 学術性・peer review・Publication Forum
@@ -43,7 +41,6 @@ Query時は最初に読む。
 - [Interleaved thinking](concepts/Interleaved thinking.md) — extended thinkingのtool呼び出し合間での利用
 - [subagentからfilesystemへ直接output](concepts/subagentからfilesystemへ直接output.md) — game of telephone回避
 - [claimごとのconfidence score（research report）](concepts/claimごとのconfidence score（research report）.md) — 出力の透明性軸。判定対象はclaimで書誌metadataは別判定
-- [不在表示から研究ギャップを検出する](concepts/不在表示から研究ギャップを検出する.md) — curated corpus上のsemantic不在断定をnegative survey近似として使う
 
 ### 検索・抽出API
 
@@ -80,6 +77,12 @@ Query時は最初に読む。
 - [DC-NDL拡張schema](concepts/DC-NDL拡張schema.md) — 日本の図書館Dublin Core拡張
 - [JSON-LD / Linked Data書誌API](concepts/JSON-LD _ Linked Data書誌API.md) — RDF/JSON-LDでの書誌取得
 - [オープンデータ公開条件（CC BY 4.0等）](concepts/オープンデータ公開条件（CC BY 4.0等）.md) — 二次利用条件の判定軸
+
+### 実地ケース由来の方法論
+
+- [探索履歴の偏り](concepts/探索履歴の偏り.md) — 蓄積した記録の非対称が後の比較判断にバイアスを与える
+- [問いの反転](concepts/問いの反転.md) — mismatch発覚時に問いを逆向きに組み替え、素材を使い回すpivot
+- [不在表示から研究ギャップを検出する](concepts/不在表示から研究ギャップを検出する.md) — curated corpus上のsemantic不在断定をnegative survey近似として使う
 
 ## entities
 
