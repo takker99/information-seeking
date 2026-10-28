@@ -15,7 +15,7 @@ OpenAlexの公式REST API reference。works / authors / sources / institutions /
 - base URL: `https://api.openalex.org`
 - 認証: `api_key`クエリパラメータ（無くても基本機能は無料で試せる）
 - 全データCC0、licenseに関する懸念は原則無い
-- LLM/agent向けに[LLM Quick Reference](/api/llm-quick-reference/)と[OpenAPI spec](/openapi.json)を提供
+- LLM/agent向けに[LLM Quick Reference](https://help.openalex.org/api/llm-quick-reference/)と[OpenAPI spec](https://help.openalex.org/openapi.json)を提供
 
 ### Endpoint
 
@@ -26,8 +26,8 @@ OpenAlexの公式REST API reference。works / authors / sources / institutions /
 ### 認証・rate
 
 - basic use無料
-- [free API key](/api/authentication/)で**日次budget 10倍**
-- 重い用途は[pay-as-you-go](/access/pricing/)
+- [free API key](https://help.openalex.org/api/authentication/)で**日次budget 10倍**
+- 重い用途は[pay-as-you-go](https://help.openalex.org/access/pricing/)
 - website自体も同じpublic endpointで稼働
 
 ### 重要な落とし穴
@@ -41,8 +41,8 @@ OpenAlexの公式REST API reference。works / authors / sources / institutions /
 ### 検索の種類
 
 - keyword-based `search`（API全体）
-- [Semantic Search](/api/semantic-search/)（embedding-based、別途仕様）
-- [OQL](/api/oql/)（OpenAlex Query Language、保存可能な表現力あるquery）
+- [Semantic Search](https://help.openalex.org/api/semantic-search/)（embedding-based、別途仕様）
+- [OQL](https://help.openalex.org/api/oql/)（OpenAlex Query Language、保存可能な表現力あるquery）
 
 ### Response envelope
 
@@ -77,5 +77,4 @@ OpenAlexの公式REST API reference。works / authors / sources / institutions /
 ## 関連
 
 - [[学術メタデータAPIの書誌グラフ]]、[[検索とfilterの分離]]、[[Semantic Search（embeddingベース）]]、[[Dehydrated nested entity]]、[[OpenAlex OQL]]
-- [[2026-09-30 Crossref REST API]]
 - [[問いに応じた情報探索経路の設計]]

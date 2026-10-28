@@ -44,13 +44,11 @@ Perplexity Research mode（特に Advanced Deep Research）のconsumer向けupda
 ## 設計含意
 
 - **Follow-up during research** はAnthropicの [[2026-09-30 Anthropic Multi-Agent Research System]] には明示されない ([[2026-09-30 OpenAI ChatGPT Deep Research Help]] も「interruptしてadjust focus」程度)。PerplexityはUXとして途中質問を追加できる点を強調
-- **Code sandboxでの計算** は[[2026-09-30 OpenAI Deep Research API]]のcode interpreter、Agent API ([[2026-09-30 Perplexity Sonar Deep Research to Agent API Migration]]) のsandboxと並ぶ。複数実装で共通化
+- **Code sandboxでの計算** は[[2026-09-30 OpenAI Deep Research API]]のcode interpreter、Agent API (2026-09-30 Perplexity Sonar Deep Research to Agent API Migration) のsandboxと並ぶ。複数実装で共通化
 - **Progressive disclosure（Key Findings as You Go）** は[[非同期研究タスク]]のpolling/streaming ([[2026-09-30 Gemini Deep Research Agent]]) と並ぶ。中間結果を[[検索過程の記録]]の節目として使える
-- Opus 4.6 Thinking / 4.5 Thinkingのような推論強化モデルの選択は、Anthropic評価 ([[2026-09-30 Anthropic Multi-Agent Research System]]) のtoken効率議論と整合
+- Opus 4.6 Thinking / 4.5 Thinkingのような推論強化モデルの選択は、Anthropic評価 (2026-09-30 Anthropic Multi-Agent Research System) のtoken効率議論と整合
 
 ## 関連
 
-- [[Deep Research agent]]、[[マルチソースグラウンディング]]、[[非同期研究タスク]]
-- [[2026-09-30 Perplexity Sonar Deep Research to Agent API Migration]] — API側
-- [[2026-09-30 Anthropic Multi-Agent Research System]]、[[2026-09-30 OpenAI ChatGPT Deep Research Help]]
+- [[Deep Research agent]]、[[マルチソースグラウンディング]]
 - [[問いに応じた情報探索経路の設計]]

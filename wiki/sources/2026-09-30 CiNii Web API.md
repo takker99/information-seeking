@@ -30,8 +30,8 @@ CiNii Research側で: 論文検索、図書館検索、所蔵検索。CiNii Book
 
 ### 利用登録
 
-- API利用には[登録](/ja/cinii/api/developer)が必要。
-- 商用利用では事前連絡が求められる場合がある（[利用規約](/cinii/terms)参照）。
+- API利用には[登録](https://support.nii.ac.jp/ja/cinii/api/developer)が必要。
+- 商用利用では事前連絡が求められる場合がある（[利用規約](https://support.nii.ac.jp/cinii/terms)参照）。
 
 ### 関連NIIコンテンツサービス
 
@@ -47,11 +47,9 @@ CiNii Research側で: 論文検索、図書館検索、所蔵検索。CiNii Book
 - **内容説明・目次はAPI不可、画面のみ**という制約は、論文評価に要旨や概要を見たい場合の経路設計に影響する。[[情報源の評価]]は本文ではなく書誌同定に重きを置く
 - CC BY 4.0のオープンデータ部分は商用・再利用しやすい。[[マルチソースグラウンディング]]のsource拡張としてDeep Research agentにMCP経由で乗せやすい
 - 4つのAPI（OpenURL/OpenSearch/RDF/JSON-LD）は[[図書館検索プロトコル（SRU_OpenSearch_OpenURL_OAI-PMH）]]の仲間。SRU/OAI-PMHが無いため、bulk harvestはデータセット公開（RDF/XML、年1回）または週次のAPI取得で代替
-- 関連NIIサービス（KAKEN/IRDB/NII-REO）と合わせて、日本の学術書誌・研究助成・機関リポジトリ・電子リソースを[[マルチソースグラウンディング]]経路に組み込める
+- 関連NIIサービス（KAKEN/IRDB/NII-REO）と合わせて、日本の学術書誌・研究助成・機関リポジトリ・電子リソースをマルチソースグラウンディング経路に組み込める
 
 ## 関連
 
 - [[JSON-LD _ Linked Data書誌API]]、[[オープンデータ公開条件（CC BY 4.0等）]]
-- [[図書館検索プロトコル（SRU_OpenSearch_OpenURL_OAI-PMH）]]、[[DC-NDL拡張schema]]
-- [[2026-09-30 NDL Search API]]
 - [[問いに応じた情報探索経路の設計]]

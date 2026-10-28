@@ -20,8 +20,8 @@ Web検索と本文抽出を別model-callable toolとして、独立したprovide
 
 - PerplexityはAPI製品設計の分離（生結果API vs 回答生成API）
 - Hermesはagent抽象の分離（tool単位のbackend選択）
-- どちらも「結果取得」と「解釈・統合」を分けるが、責任の所在（vendor / user agent）が異なる
+- どちらも工程を分けてprovider/APIを選べるようにする点は共通するが、分離する対象は異なる。Perplexityは結果取得と回答生成の分離であり、Hermesは検索と本文抽出の分離である。責任の所在（vendor / user agent）も異なる
 
 ## 関連
 
-- [[検索providerの抽象化]]、[[429 fallback機構]]
+- [[検索providerの抽象化]]、[[provider切替とrate-limit fallback]]

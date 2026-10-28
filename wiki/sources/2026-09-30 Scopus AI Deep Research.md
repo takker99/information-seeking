@@ -61,11 +61,10 @@ natural language queryで:
 - **confidence score per claim** は[[情報源の評価]]を中間生成物に埋め込む設計。[[LLM-as-judge評価rubric]]が開発時の評価軸であるのに対し、Scopusはend-user-facingの透明性軸
 - "research limitations and gaps"を強調する姿勢は[[生成AIで問いと検索語を作る]]の延長で、次の問いの種を明示する
 - literature review replacementを避けるphilosophyは[[学術メタデータAPIの書誌グラフ]]（[[2026-09-30 OpenAlex API]]、[[2026-09-30 Crossref REST API]]）での探索と役割分担が必要。Deep Research = 探索の加速、literature review = 人の仕事
-- "natural languageで絞り込み指定" は[[生成AIで問いと検索語を作る]]の延長。Boolean ([[検索テクニック]]) ではなくsemantic + structured intentでfilter
+- "natural languageで絞り込み指定" は生成AIで問いと検索語を作るの延長。Boolean (検索テクニック) ではなくsemantic + structured intentでfilter
 
 ## 関連
 
-- [[Deep Research agent]]、[[マルチソースグラウンディング]]、[[Semantic Search（embeddingベース）]]
 - [[claimごとのconfidence score（research report）]]
 - [[2026-09-30 Anthropic Multi-Agent Research System]]、[[2026-09-30 OpenAI Deep Research API]]、[[2026-09-30 Perplexity Sonar Deep Research to Agent API Migration]]
 - [[問いに応じた情報探索経路の設計]]

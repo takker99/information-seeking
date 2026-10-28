@@ -65,15 +65,13 @@ Responses API経由のdeep researchは**1/2を含まない**。caller側でclari
 
 ## 設計含意
 
-- [[マルチソースグラウンディング]]（[[2026-09-30 Gemini Deep Research Agent]]）と同型: web search + file search + remote MCP + code interpreter の組合せをtool毎の[[マルチソースグラウンディング]]として整理できる
+- [[マルチソースグラウンディング]]（[[2026-09-30 Gemini Deep Research Agent]]）と同型: web search + file search + remote MCP + code interpreter の組合せをtool毎のマルチソースグラウンディングとして整理できる
 - MCP serverの `search`+`fetch` interface限定は[[MCPサーバー経由のsource拡張]]の具体的な実装契約を提示。汎用MCP serverは対応しない
 - ChatGPT版の中間2段（clarification / prompt rewriting）はconsumer体験の最適化で、API経由ではcaller責務。[[Deep Research agent]]のprompt設計で[[生成AIで問いと検索語を作る]]と接続する
 - `background: true` と webhookは[[非同期研究タスク]]のOpenAI版実装。ZDR制約との両立が難しい
-- model IDは `gpt-5.6-sol` への移行が進行中。[[2026-09-30 Gemini Deep Research Agent]]の`deep-research-preview-*`と同様、preview/legacy model IDは将来廃止予定
+- model IDは `gpt-5.6-sol` への移行が進行中。2026-09-30 Gemini Deep Research Agentの`deep-research-preview-*`と同様、preview/legacy model IDは将来廃止予定
 
 ## 関連
 
-- [[Deep Research agent]]、[[マルチソースグラウンディング]]、[[MCPサーバー経由のsource拡張]]、[[非同期研究タスク]]
 - [[2026-09-30 OpenAI ChatGPT Deep Research Help]] — consumer側
-- [[2026-09-30 Gemini Deep Research Agent]]
 - [[問いに応じた情報探索経路の設計]]

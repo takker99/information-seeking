@@ -87,13 +87,12 @@ search-only: Brave / DDGS / xAI / OpenAI Native。これらに`web_extract`を�
 ## 設計含意
 
 - per-capability backend分離は[[2026-09-30 OpenCode Web Search]]より粒度が高い。「無料search + 有償extract」の組合せを1エンドポイントに統合できる
-- keyless ring + one-shot rescueは[[429 fallback機構]]のHermes版で、**ring vendorの無料枠にコストが分散**する点が追加負担
+- keyless ring + one-shot rescueはOpenCodeの429 fallbackのHermes版で、**ring vendorの無料枠にコストが分散**する点が追加負担
 - cache + fan-out coalesceは、複数subagentが同じ問いを並列で調べる場面で**コスト・latency双方を抑える**構造。[[Deep Research agent]]のsubagent researchに自然な基盤
 - xAI/OpenAI Nativeはserver-side toolで、Hermes側のclient-side searchをswapする設計。[[2026-09-30 Gemini Deep Research Agent]]の`google_search` tool設定と同型の位置に置く
 - LLMがURLを選ぶprovider（xAI）とindex-driven provider（Brave等）の信頼差は、route評価で**source provenance**として記録すべき軸
 
 ## 関連
 
-- [[検索と抽出のbackend分離]]、[[Keyless ringとone-shot rescue]]、[[結果cacheとfan-out coalesce]]、[[Truncated extractとon-disk全本文]]、[[LLMがURLを選ぶproviderの信頼モデル]]
-- [[2026-09-30 OpenCode Web Search]]
+- [[検索と抽出のbackend分離]]、[[provider切替とrate-limit fallback]]、[[結果cacheとfan-out coalesce]]、[[Truncated extractとon-disk全本文]]、[[LLMがURLを選ぶproviderの信頼モデル]]
 - [[問いに応じた情報探索経路の設計]]

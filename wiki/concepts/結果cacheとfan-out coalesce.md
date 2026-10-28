@@ -20,4 +20,4 @@ tags: [agent, caching]
 
 ## 関連
 
-- [[検索providerの抽象化]]、[[Keyless ringとone-shot rescue]]
+- [[検索providerの抽象化]]、[[provider切替とrate-limit fallback]]

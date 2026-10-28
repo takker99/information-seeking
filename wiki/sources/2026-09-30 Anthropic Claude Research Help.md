@@ -46,12 +46,10 @@ ClaudeのResearch機能のconsumer向けhelpページ。Pro / Max / Team / Enter
 
 - Web search toolの**enable/precondition**としてResearchが動く構造は、Deep Research agentが「web search上に構築される」設計 ([[2026-09-30 Gemini Deep Research Agent]]のgoogle_search default tool, [[2026-09-30 OpenAI Deep Research API]]のweb_search_preview必須) と同型
 - "Pull relevant context from X" の明示は、Anthropicのmulti-agent architecture ([[2026-09-30 Anthropic Multi-Agent Research System]]) で subagent が tool選択を意識する設計の consumer側表現
-- プラン別limit消費が速い点は[[マルチソースグラウンディング]]の[[2026-09-30 Anthropic Multi-Agent Research System]]のtoken budget議論と整合
+- プラン別limit消費が速い点は[[マルチソースグラウンディング]]の2026-09-30 Anthropic Multi-Agent Research Systemのtoken budget議論と整合
 - Web / Desktop / Mobile横断は[[2026-09-30 Google Search AI Mode]] ([[Search履歴ベースの個人化]]) と類似consumer体験の追求
 
 ## 関連
 
-- [[Deep Research agent]]、[[マルチソースグラウンディング]]
-- [[2026-09-30 Anthropic Multi-Agent Research System]]
-- [[2026-09-30 Gemini Deep Research Agent]]、[[2026-09-30 OpenAI Deep Research API]]
+- [[Deep Research agent]]
 - [[問いに応じた情報探索経路の設計]]

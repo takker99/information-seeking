@@ -56,13 +56,13 @@ OpenAPI specに`Extract`/`Crawl`/`Map`/`Research`/`Feedback`/`Usage`/`Logs`のta
 ## 設計含意
 
 - `include_domains_mode: prefer`は[[2026-09-30 Perplexity Search API]]のallowlist/denylistにない中間挙動。「普段は広めに探して、特定domainを優先的に上位に出す」が[[ドメインフィルタ]]より緩く[[情報源の評価]]の前段として使える
-- `advanced` depthの**2 credits**課金は[[Fast Search tier]]の低latencyオプションと並ぶ課金設計。深depthのbulk利用は予算影響が大きいため、用途別depth切替が必要
+- `advanced` depthの**2 credits**課金はPerplexityのFast tierの低latencyオプションと並ぶ課金設計。深depthのbulk利用は予算影響が大きいため、用途別depth切替が必要
 - `auto_parameters`で`search_depth`が自動昇格する場合、credit消費が**黙って2倍**になりうる。明示指定の方が再現性とcost管理に有利
 - `topic=finance`は[[content typeで探索先を選ぶ]]のcontent typeに直結する特殊topic。同種のdomain特定topicが他APIにないか比較対象になる
 - `/research` endpointは[[2026-09-30 Gemini Deep Research Agent]]のmanaged agent経路に近い位置にある可能性。`/search`とは別物のため個別確認が必要
 
 ## 関連
 
-- [[検索depthとcreditのトレードオフ]]、[[include_domains_mode restrict_prefer]]、[[auto_parametersの暗黙昇格]]
-- [[2026-09-30 Perplexity Search API]]、[[2026-09-30 Exa Search API]]
+- [[検索depthとcreditのトレードオフ]]
+- [[2026-09-30 Exa Search API]]
 - [[問いに応じた情報探索経路の設計]]

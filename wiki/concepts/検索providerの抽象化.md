@@ -21,4 +21,4 @@ agent本体とは別の検索backendを差し替え可能にする薄い統合�
 
 ## 関連
 
-- [[429 fallback機構]]
+- [[provider切替とrate-limit fallback]]

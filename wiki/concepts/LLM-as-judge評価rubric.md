@@ -22,10 +22,6 @@ Anthropic Researchのrubric ([[2026-09-30 Anthropic Multi-Agent Research System]
 
 経路設計上の位置:
 
-- [[Deep Research agent]]の複数実装（[[2026-09-30 Gemini Deep Research Agent]]、[[2026-09-30 OpenAI Deep Research API]]、[[2026-09-30 Anthropic Multi-Agent Research System]]、[[2026-09-30 xAI Grok Multi-Agent Research]]）を同一rubricで比較可能にする
+- [[Deep Research agent]]の複数実装（[[2026-09-30 Gemini Deep Research Agent]]、[[2026-09-30 OpenAI Deep Research API]]、2026-09-30 Anthropic Multi-Agent Research System、[[2026-09-30 xAI Grok Multi-Agent Research]]）を同一rubricで比較可能にする
 - 個人レベルのroute評価（[[検索過程の記録]]）にもLLM judgeが部分適用できる（例: 候補source集合が十分か）
 - 自動化偏り（SEO content farm優先）を防ぐ[[情報源の評価]]の自動化に応用可能
-
-## 関連
-
-- [[Deep Research agent]]、[[情報源の評価]]

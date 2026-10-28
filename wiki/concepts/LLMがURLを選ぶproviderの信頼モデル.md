@@ -14,8 +14,4 @@ tags: [agent, trust-model]
 
 - OpenAI Native (Codex)も同じserver-side tool型で、LLMがURLを選ぶ構造
 - [[2026-09-30 Gemini Deep Research Agent]]の`google_search` tool設定はindex-basedだが、Deep Research agentのplan→search→iterate→outputの中でURL選択が起きる点ではLLM駆動
-- [[2026-09-30 OpenCode Web Search]]・[[2026-09-30 Hermes Web Search]]のkeyless ringやper-capability backend選択では、信頼モデルが違うproviderが混在しうる。route記録に**どの信頼モデルのproviderを使ったか**を残す
-
-## 関連
-
-- [[情報源の評価]]
+- [[2026-09-30 OpenCode Web Search]]・2026-09-30 Hermes Web Searchのkeyless ringやper-capability backend選択では、信頼モデルが違うproviderが混在しうる。route記録に**どの信頼モデルのproviderを使ったか**を残す

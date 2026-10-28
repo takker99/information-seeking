@@ -14,4 +14,4 @@ agentをremote MCP（Model Context Protocol）サーバーに接続し、外部T
 
 ## 関連
 
-- [[マルチソースグラウンディング]]、[[Deep Research agent]]
+- [[Deep Research agent]]

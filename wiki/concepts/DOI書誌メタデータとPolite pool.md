@@ -7,7 +7,7 @@ tags: [scholarly-search, api, etiquette]
 DOIを起点に書誌metadataを取得するAPI経路と、bulk呼び出しで「polite pool」待遇を受けるための識別子提供の慣行。
 
 - Crossref REST APIはDOIで`/works/{doi}`を取り、書誌・著者・出版物・license・funding・ORCID/ROR IDを返す ([[2026-09-30 Crossref REST API]])。
-- **polite pool**: クエリに`mailto=yourmail@company.org`を含めると、Crossrefがbulk trafficの中で**識別子付きを優先**する。研究・自動化での利用では付けるのが推奨 ([[2026-09-30 Crossref REST API]]、 [Tips and tricks](https://www.crossref.org/documentation/retrieve-metadata/rest-api/tips-for-using-the-crossref-rest-api/))。
+- **polite pool**: クエリに`mailto=yourmail@company.org`を含めると、Crossrefがbulk trafficの中で**識別子付きを優先**する。研究・自動化での利用では付けるのが推奨 (2026-09-30 Crossref REST API、 [Tips and tricks](https://www.crossref.org/documentation/retrieve-metadata/rest-api/tips-for-using-the-crossref-rest-api/))。
 
 経路設計上の含意:
 

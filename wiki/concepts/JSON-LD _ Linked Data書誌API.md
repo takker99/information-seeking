@@ -16,7 +16,7 @@ tags: [api, linked-data]
 - Linked Data viewer/Reasoner（SPARQL等）と組み合わせて[[引用追跡]]を構造的に行う
 - 同じidentifierが複数schemaで表現されるため、書誌同定の[[情報源の評価]]をschema統一で補強
 
-[[Dehydrated nested entity]]（OpenAlex）との対比:
+Dehydrated nested entity（OpenAlex）との対比:
 
 - OpenAlexはresponse内のnested entityをdehydrated（ID+name）で返してresponse sizeを抑える
 - JSON-LD/RDFはnested entityを`@id`参照で保持。クライアントがSPARQL等のqueryで辿る

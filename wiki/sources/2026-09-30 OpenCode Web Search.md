@@ -37,7 +37,7 @@ OpenCodeの公式websearch機能説明。OpenCode本体とは別のproviderを�
 ### Permissions
 
 - `websearch` permission action、検索語がresource。明示許可のないsearchは確認。
-- ruleの順序とmatchingは[Permissions](/permissions)参照。
+- ruleの順序とmatchingは[Permissions](https://opencode.ai/v2/docs/permissions)参照。
 
 ### Disable
 
@@ -52,6 +52,6 @@ OpenCodeの公式websearch機能説明。OpenCode本体とは別のproviderを�
 
 ## 関連
 
-- [[検索providerの抽象化]]、[[429 fallback機構]]
-- [[2026-09-30 Exa Search API]]、[[2026-09-30 Tavily Search API]]、[[2026-09-30 Hermes Web Search]]
+- [[検索providerの抽象化]]、[[provider切替とrate-limit fallback]]
+- [[2026-09-30 Hermes Web Search]]
 - [[問いに応じた情報探索経路の設計]]

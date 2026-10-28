@@ -25,8 +25,4 @@ tags: [scholarly-search, api]
 
 - Crossrefは登録publisher・trusted sources由来、未登録の文献は含まれない
 - OpenAlexは curated core corpus 300M+ works、`corpus=all`でdatasets/repository recordsも含む
-- 分野別の深さは[[content typeで探索先を選ぶ]]で別途確認が必要
-
-## 関連
-
-- [[引用追跡]]、[[マルチソースグラウンディング]]
+- 分野別の深さはcontent typeで探索先を選ぶで別途確認が必要

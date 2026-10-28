@@ -6,7 +6,7 @@ tags: [scholarly-search, query-language]
 
 OpenAlex Query Language。保存可能・再利用可能なquery式を文字列で組む仕組み。
 
-- OQLは[公式のOQLページ](/api/oql/)で定義。`filter`や`search`の組合せを文字列で記述できる ([[2026-09-30 OpenAlex API]])。
+- OQLは[公式のOQLページ](https://help.openalex.org/api/oql/)で定義。`filter`や`search`の組合せを文字列で記述できる ([[2026-09-30 OpenAlex API]])。
 - 用途: 同じ検索を後日に再現する、定期的なデータ更新を監視する、repositoryに保存して[[検索過程の記録]]に統合する。
 - 関連: [[検索とfilterの分離]]（OpenAlex）と機能が接続する。filter式をOQLで文字列化し、保存・共有できる。
 

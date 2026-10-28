@@ -8,7 +8,7 @@ tags: [multi-agent, agent-design]
 
 - Lead agent: query分析 → 戦略立案 → Memoryへplan保存 → subagent spawn → 結果synthesis → 必要なら追加subagentや戦略修正 ([[2026-09-30 Anthropic Multi-Agent Research System]])
 - Subagent: 独自tool/prompt/exploration trajectoryで部分探索、interleaved thinkingでtool結果を評価しqueryを微調整、findingsをlead agentへ返す
-- 適用条件: open-endedな研究タスク、breadth-first query、複数独立方向の並列化が必要な領域 ([[2026-09-30 Anthropic Multi-Agent Research System]])
+- 適用条件: open-endedな研究タスク、breadth-first query、複数独立方向の並列化が必要な領域 (2026-09-30 Anthropic Multi-Agent Research System)
 
 効果（Anthropic内部評価）:
 
@@ -25,10 +25,6 @@ tags: [multi-agent, agent-design]
 
 設計含意:
 
-- subagent数がそのままcost・latencyに効く。task complexityに応じたscaling rulesが要る ([[2026-09-30 Anthropic Multi-Agent Research System]]のprompting原則3)
+- subagent数がそのままcost・latencyに効く。task complexityに応じたscaling rulesが要る (2026-09-30 Anthropic Multi-Agent Research Systemのprompting原則3)
 - subagentの独立context windowは[[マルチソースグラウンディング]]の並列性を支える
 - lead agentが同期実行だとbottleneckになるためasync化は将来課題
-
-## 関連
-
-- [[マルチソースグラウンディング]]、[[Deep Research agent]]

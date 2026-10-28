@@ -20,7 +20,3 @@ multi-agent researchで、最終回答に出てくる各claimに対し文書中�
 - consumer向け[[2026-09-30 OpenAI ChatGPT Deep Research Help]]もcitation必須を強調
 - AI ModeのPersonal Intelligence ([[2026-09-30 Google Search AI Mode]])はsource linkを回答に付与するが、span特定は明示されない
 - 評価rubric ([[LLM-as-judge評価rubric]]) で「citation accuracy = cited sources match claims?」が評価軸になる
-
-## 関連
-
-- [[構造化出力schema]]、[[情報源の評価]]

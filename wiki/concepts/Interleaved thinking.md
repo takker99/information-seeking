@@ -19,4 +19,4 @@ extended thinking（LLMが回答前にthinking traceを出力する仕組み）�
 
 ## 関連
 
-- [[生成AIで問いと検索語を作る]]、[[検索語の展開]]、[[Deep Research agent]]
+- [[検索語の展開]]

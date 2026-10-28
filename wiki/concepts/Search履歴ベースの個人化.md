@@ -7,7 +7,7 @@ tags: [privacy, ai-search]
 Search履歴・検索サービスの設定を使って、検索体験（AI Modeを含む）の回答を個人化する仕組み。回答の精度と、個人情報の取扱いの両面で影響する。
 
 - Google AI ModeのPersonal Intelligence: historyとpersonalized recommendations有効時、過去のSearch Services Historyを参照して回答を調整する。18歳以上 ([[2026-09-30 Google Search AI Mode]])。
-- Workspace（Gmail/Calendar）・Google Photos連携で、検索サービスがこれらのcontentにもアクセスできるようになる。同意の単位はSearch Services一括（AI Mode・Discover・Maps・Shopping・News・Flights・Hotels・Translate）([[2026-09-30 Google Search AI Mode]])。
+- Workspace（Gmail/Calendar）・Google Photos連携で、検索サービスがこれらのcontentにもアクセスできるようになる。同意の単位はSearch Services一括（AI Mode・Discover・Maps・Shopping・News・Flights・Hotels・Translate）(2026-09-30 Google Search AI Mode)。
 - 制御: remember/forgetで個別記憶を操作。AI Mode historyは個別削除・全削除が可能。
 
 情報探索経路としては、

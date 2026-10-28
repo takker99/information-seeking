@@ -69,6 +69,6 @@ xAI公式の `grok-4.20-multi-agent` モデル仕様（Realtime Multi-agent Rese
 
 ## 関連
 
-- [[Deep Research agent]]、[[マルチソースグラウンディング]]、[[MCPサーバー経由のsource拡張]]、[[Agent操舵フィールド]]
-- [[2026-09-30 Anthropic Multi-Agent Research System]]、[[2026-09-30 Gemini Deep Research Agent]]、[[2026-09-30 OpenAI Deep Research API]]、[[2026-09-30 Perplexity Sonar Deep Research to Agent API Migration]]
+- [[MCPサーバー経由のsource拡張]]
+- [[2026-09-30 Gemini Deep Research Agent]]、[[2026-09-30 OpenAI Deep Research API]]
 - [[問いに応じた情報探索経路の設計]]

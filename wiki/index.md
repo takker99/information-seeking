@@ -2,6 +2,7 @@
 
 全ページのカタログ。各エントリ1行: `- [ページタイトル](パス) — 1行要約`
 Query時は最初に読む。
+→ 候補ページの本文は `bash .agents/scripts/read-page.sh "<タイトル>"` で読む（末尾に1 hop・2 hopの関連ページが付く。パスを直接 read するとhop情報が得られない）
 
 ## top-level
 
@@ -15,8 +16,6 @@ Query時は最初に読む。
 - [検索テクニック](concepts/検索テクニック.md) — Boolean演算子・phrase search・truncation・advanced search・field制限
 - [検索結果の広げ方と絞り方](concepts/検索結果の広げ方と絞り方.md) — 結果量に応じた調整とdatabase切替
 - [検索過程の記録](concepts/検索過程の記録.md) — search journalの項目と運用。本人の記憶の校正装置でもある
-- [探索履歴の偏り](concepts/探索履歴の偏り.md) — 蓄積した記録の非対称が後の比較判断にバイアスを与える
-- [問いの反転](concepts/問いの反転.md) — mismatch発覚時に問いを逆向きに組み替え、素材を使い回すpivot
 - [content typeで探索先を選ぶ](concepts/content typeで探索先を選ぶ.md) — 必要な資料種からdatabase・guideを選ぶ
 - [引用追跡](concepts/引用追跡.md) — 後方/前方のcitation graph辿り
 - [情報源の評価](concepts/情報源の評価.md) — 学術性・peer review・Publication Forum
@@ -42,29 +41,22 @@ Query時は最初に読む。
 - [Interleaved thinking](concepts/Interleaved thinking.md) — extended thinkingのtool呼び出し合間での利用
 - [subagentからfilesystemへ直接output](concepts/subagentからfilesystemへ直接output.md) — game of telephone回避
 - [claimごとのconfidence score（research report）](concepts/claimごとのconfidence score（research report）.md) — 出力の透明性軸。判定対象はclaimで書誌metadataは別判定
-- [不在表示から研究ギャップを検出する](concepts/不在表示から研究ギャップを検出する.md) — curated corpus上のsemantic不在断定をnegative survey近似として使う
 
 ### 検索・抽出API
 
 - [生検索結果APIと回答APIの分離](concepts/生検索結果APIと回答APIの分離.md) — PerplexityのSearch APIとAgent API
-- [Fast Search tier](concepts/Fast Search tier.md) — 低latency・低costのtier
 - [Multi-Query検索](concepts/Multi-Query検索.md) — 1リクエストに複数query
-- [ドメインフィルタ](concepts/ドメインフィルタ.md) — allowlist/denylist
-- [Multi-step deep search](concepts/Multi-step deep search.md) — synthesisを含むdeep type
+- [ドメインフィルタ](concepts/ドメインフィルタ.md) — allowlist/denylistとrestrict/preferの適用モード
 - [構造化出力schema](concepts/構造化出力schema.md) — JSON Schemaでoutputを制御
 - [Agent操舵フィールド](concepts/Agent操舵フィールド.md) — objective・systemPromptでの操舵
-- [ページ本文の段階取得](concepts/ページ本文の段階取得.md) — text/highlights/summaryとcache制御
-- [履歴snapshot取得](concepts/履歴snapshot取得.md) — 過去時点pageのstored version
-- [検索depthとcreditのトレードオフ](concepts/検索depthとcreditのトレードオフ.md) — Tavilyのsearch_depth課金額
-- [include_domains_mode restrict/prefer](concepts/include_domains_mode restrict_prefer.md) — ハードフィルタと優先の2モード
-- [auto_parametersの暗黙昇格](concepts/auto_parametersの暗黙昇格.md) — 自動パラメータ推定とcost増
+- [ページ本文の段階取得](concepts/ページ本文の段階取得.md) — text/highlights/summaryの段階取得、cache制御と履歴snapshot
+- [検索depthとcreditのトレードオフ](concepts/検索depthとcreditのトレードオフ.md) — Tavilyのsearch_depth課金・auto_parametersの暗黙昇格、PerplexityのFast tier、Exaのmulti-step deep search
 
 ### Agent harness
 
 - [検索providerの抽象化](concepts/検索providerの抽象化.md) — backend差替え可能な薄い層
-- [429 fallback機構](concepts/429 fallback機構.md) — rate-limit時の自動切替
+- [provider切替とrate-limit fallback](concepts/provider切替とrate-limit fallback.md) — OpenCodeの429時provider切替とHermesのkeyless ring+one-shot rescue
 - [検索と抽出のbackend分離](concepts/検索と抽出のbackend分離.md) — search/extractを別providerに
-- [Keyless ringとone-shot rescue](concepts/Keyless ringとone-shot rescue.md) — 無料tier round-robinと救済
 - [結果cacheとfan-out coalesce](concepts/結果cacheとfan-out coalesce.md) — subagent並列時のcache統合
 - [Truncated extractとon-disk全本文](concepts/Truncated extractとon-disk全本文.md) — head/tail window+disk全保存
 - [LLMがURLを選ぶproviderの信頼モデル](concepts/LLMがURLを選ぶproviderの信頼モデル.md) — xAI等のLLM駆動URLの信頼差
@@ -76,7 +68,7 @@ Query時は最初に読む。
 - [Semantic Search（embeddingベース）](concepts/Semantic Search（embeddingベース）.md) — embedding近傍の文献検索
 - [Dehydrated nested entity](concepts/Dehydrated nested entity.md) — ID+nameのstub返却
 - [OpenAlex OQL](concepts/OpenAlex OQL.md) — 保存可能なquery言語
-- [DOI書誌メタデータとPolite pool](concepts/DOI書誌メタデータとPolite pool.md) — DOI起点APIとmailo識別子
+- [DOI書誌メタデータとPolite pool](concepts/DOI書誌メタデータとPolite pool.md) — DOI起点APIとmailto識別子
 - [Content negotiation（書誌metadata）](concepts/Content negotiation（書誌metadata）.md) — 単一recordの形式切替
 
 ### 図書館・書誌
@@ -85,6 +77,12 @@ Query時は最初に読む。
 - [DC-NDL拡張schema](concepts/DC-NDL拡張schema.md) — 日本の図書館Dublin Core拡張
 - [JSON-LD / Linked Data書誌API](concepts/JSON-LD _ Linked Data書誌API.md) — RDF/JSON-LDでの書誌取得
 - [オープンデータ公開条件（CC BY 4.0等）](concepts/オープンデータ公開条件（CC BY 4.0等）.md) — 二次利用条件の判定軸
+
+### 実地ケース由来の方法論
+
+- [探索履歴の偏り](concepts/探索履歴の偏り.md) — 蓄積した記録の非対称が後の比較判断にバイアスを与える
+- [問いの反転](concepts/問いの反転.md) — mismatch発覚時に問いを逆向きに組み替え、素材を使い回すpivot
+- [不在表示から研究ギャップを検出する](concepts/不在表示から研究ギャップを検出する.md) — curated corpus上のsemantic不在断定をnegative survey近似として使う
 
 ## entities
 

@@ -17,4 +17,4 @@ tags: [search-api, output-format]
 
 ## 関連
 
-- [[Multi-step deep search]]、[[Agent操舵フィールド]]
+- [[検索depthとcreditのトレードオフ]]、[[Agent操舵フィールド]]

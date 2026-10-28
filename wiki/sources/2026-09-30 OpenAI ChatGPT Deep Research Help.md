@@ -56,14 +56,12 @@ ChatGPT（および Work / Codex）のDeep Research機能のconsumer向けhelp�
 ## 設計含意
 
 - **3-step flow（describe → plan review → monitor）** は[[2026-09-30 Gemini Deep Research Agent]]のplan→multi-source search→iterateと並ぶconsumer体験。ただしChatGPT版は明示的なplan承認ステップを挟む点が特徴
-- 「Prioritize these sites, but allow full-web search」は[[2026-09-30 Tavily Search API]]の[[include_domains_mode restrict_prefer]]の **prefer** と同じ意図。複数のDeep Research productで「allowlist hard / priority soft」の二段構えが共通化
+- 「Prioritize these sites, but allow full-web search」は[[2026-09-30 Tavily Search API]]の[[ドメインフィルタ|include_domains_mode restrict/prefer]]の **prefer** と同じ意図。複数のDeep Research productで「allowlist hard / priority soft」の二段構えが共通化
 - 「read actionのみ・write actionは使わせない」は[[マルチソースグラウンディング]]の安全性で、副作用を許さない契約
 - Chat版とAPI版（[[2026-09-30 OpenAI Deep Research API]]）の**中段処理（clarification / prompt rewriting）の差**は重要。consumer版は自動でUX向上、API版はcaller責務
 - Apps / Workspace / RBACによる権限管理は[[Search履歴ベースの個人化]]（[[2026-09-30 Google Search AI Mode]]）と同型の企業向け制御
 
 ## 関連
 
-- [[Deep Research agent]]、[[マルチソースグラウンディング]]
-- [[2026-09-30 OpenAI Deep Research API]]
-- [[2026-09-30 Gemini Deep Research Agent]]
+- [[Deep Research agent]]
 - [[問いに応じた情報探索経路の設計]]

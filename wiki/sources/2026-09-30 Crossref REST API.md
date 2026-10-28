@@ -48,7 +48,7 @@ Crossrefに登録された学術コンテンツのmetadataを取得する公式R
 
 ### Research Nexusと近年の動き
 
-- Crossrefは[Research Nexus](/documentation/research-nexus/)構想で、DOI・ORCID・ROR・funder等のidentifierを横断した研究recordのlinkageを進める
+- Crossrefは[Research Nexus](https://www.crossref.org/documentation/research-nexus/)構想で、DOI・ORCID・ROR・funder等のidentifierを横断した研究recordのlinkageを進める
 - 2026-09-15付のblog "Improving how funding connects to research outputs" で、ID無しのfunder名をROR IDに自動matchする方針
 
 ## 設計含意
@@ -62,6 +62,5 @@ Crossrefに登録された学術コンテンツのmetadataを取得する公式R
 ## 関連
 
 - [[DOI書誌メタデータとPolite pool]]、[[Content negotiation（書誌metadata）]]
-- [[学術メタデータAPIの書誌グラフ]]、[[引用追跡]]
-- [[2026-09-30 OpenAlex API]]
+- [[学術メタデータAPIの書誌グラフ]]
 - [[問いに応じた情報探索経路の設計]]

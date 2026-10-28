@@ -13,7 +13,7 @@ Perplexity Search APIの開発者向けquickstartガイド。リアルタイム�
 ### 役割分担
 
 - **Search API**: リアルタイム順位付きWeb検索結果を構造化データで返す。自前で処理するためのraw results用途。
-- **Agent API** ([別ページ](/docs/agent-api/quickstart)): 引用付きLLM回答が必要なときはそちら。
+- **Agent API** ([別ページ](https://docs.perplexity.ai/docs/agent-api/quickstart)): 引用付きLLM回答が必要なときはそちら。
 
 ### アクセス経路
 
@@ -34,7 +34,7 @@ Perplexity Search APIの開発者向けquickstartガイド。リアルタイム�
 
 ### Fast Search
 
-- `search_type: "fast"` で低latency・低cost。\$1.00 / 1000リクエスト。SDK互換のためのworkaroundが[Fast Search](/docs/search/fast-search#sdk-support)にある。
+- `search_type: "fast"` で低latency・低cost。\$1.00 / 1000リクエスト。SDK互換のためのworkaroundが[Fast Search](https://docs.perplexity.ai/docs/search/fast-search#sdk-support)にある。
 
 ### Regional Web Search
 
@@ -49,7 +49,7 @@ Perplexity Search APIの開発者向けquickstartガイド。リアルタイム�
 
 - `search_domain_filter` で allowlist（プレフィックスなし）または denylist（`-`プレフィックス）。**両方を同じリクエストで併用不可**。
 - 最大20ドメイン。pathを付けると部分pathで絞れる（例 `"nature.com/articles"`）。
-- 専用ガイド [domain-filter](/docs/search/filters/domain-filter) に高度なパターン。
+- 専用ガイド [domain-filter](https://docs.perplexity.ai/docs/search/filters/domain-filter) に高度なパターン。
 
 ## 設計含意
 
@@ -59,6 +59,5 @@ Perplexity Search APIの開発者向けquickstartガイド。リアルタイム�
 
 ## 関連
 
-- [[生検索結果APIと回答APIの分離]]、[[Fast Search tier]]、[[Multi-Query検索]]、[[ドメインフィルタ]]
-- [[2026-09-30 Exa Search API]]、[[2026-09-30 Tavily Search API]]
+- [[生検索結果APIと回答APIの分離]]、[[検索depthとcreditのトレードオフ]]、[[Multi-Query検索]]、[[ドメインフィルタ]]
 - [[問いに応じた情報探索経路の設計]]
