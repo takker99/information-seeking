@@ -83,6 +83,9 @@ Query時は最初に読む。
 - [探索履歴の偏り](concepts/探索履歴の偏り.md) — 蓄積した記録の非対称が後の比較判断にバイアスを与える
 - [問いの反転](concepts/問いの反転.md) — mismatch発覚時に問いを逆向きに組み替え、素材を使い回すpivot
 - [不在表示から研究ギャップを検出する](concepts/不在表示から研究ギャップを検出する.md) — curated corpus上のsemantic不在断定をnegative survey近似として使う
+- [引用ネットワーク断絶の検出手法](concepts/引用ネットワーク断絶の検出手法.md) — 意味近接×引用不在・構造切れ目・時間異常の3次元と、DB境界・メタ欠落・名寄せ・用語断絶の落とし穴
+- [未知異分野の発見（意味近接×引用不在）](concepts/未知異分野の発見（意味近接×引用不在）.md) — ペア指定なしで意味近接×引用欠落から候補異分野を列挙する発見モード。LBD・overlayゼロセル列挙・王子分析
+- [新しく見つかった研究群の調査設計](concepts/新しく見つかった研究群の調査設計.md) — 既存調査の後の新クラスタ調査指示。発見経路の記録・検出限界・接触経路の分離・判定語彙・比較の対称性
 
 ## entities
 
@@ -113,8 +116,12 @@ Query時は最初に読む。
 - [2026-09-30 Illinois Library Search Strategies](sources/2026-09-30 Illinois Library Search Strategies.md) — 探索前の戦略立案とsearch journalによる記録
 - [2026-09-30 Illinois Citation Chasing](sources/2026-09-30 Illinois Citation Chasing.md) — 後方/前方citation chasingとcitation indexing database
 - [2026-10-01 SMS-2026S-report Scopus AI探索記録](sources/2026-10-01 SMS-2026S-report Scopus AI探索記録.md) — 別Wikiで実行したScopus AI Deep Research複数ラウンド（13レポート）のraw記録一覧
+- [2026-10-28 引用断絶検出手法のsubagent相談（PGE-2026A）](sources/2026-10-28 引用断絶検出手法のsubagent相談（PGE-2026A）.md) — 計量書誌学subagentの手法検証・実測と親セッション検証。M&K 1953不在、RMP 1996にMogami系ゼロ
+- [2026-10-29 引用断絶検出手法のパイロット報告（分野ペアA・D）](sources/2026-10-29 引用断絶検出手法のパイロット報告（分野ペアA・D）.md) — 検証モード手順のsubagent単独実行2本の報告。A: JSPT→粒状物理のゼロセル、D: CT計測の経路置換型断絶
 
 ## analyses
 
 - [問いに応じた情報探索経路の設計](analyses/問いに応じた情報探索経路の設計.md) — 探索経路の初期研究課題と、14 sources再ingest後の設計パターン整理、他Wikiの問いを探索ケースにする運用
 - [SMS-2026S-report Scopus AI Deep Research論文探索](analyses/SMS-2026S-report Scopus AI Deep Research論文探索.md) — 学術限定DR複数ラウンド×キュレーション×DOI検証×fulltext ingestの実地ケース。AIレポートを地図、論文を根拠とする二段構成が効いた
+- [分野間引用断絶の探索事例（Mogami・金谷経路）](analyses/分野間引用断絶の探索事例（Mogami・金谷経路）.md) — subagent並列相談+spot-check検証+回顧seed手作業で断絶と位相分離を検出した2つ目の実地ケース。自動ツール経路は未検証
+- [手法検証パイロットの実施記録（分野ペアA・D）](analyses/手法検証パイロットの実施記録（分野ペアA・D）.md) — 成功判定を渡さないusability-test相当のパイロット2本。4基準合格、手順書の差分5項を抽出
